@@ -1,0 +1,26 @@
+.colors {
+
+  .subsection-content {
+    text-align: center;
+  }
+}
+
+.red {
+  background-color: $red !important;
+
+  p {
+    color: $clouds;
+  }
+}
+
+.clouds {
+  background-color: $clouds !important;
+}
+
+.darkGrey {
+  background-color: $darkGrey !important;
+
+  p {
+    color: $clouds;
+  }
+}

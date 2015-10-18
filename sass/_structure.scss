@@ -1,0 +1,59 @@
+.site-header {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+}
+
+.typography .section-content {
+	flex-direction: column;
+}
+
+.main-section {
+	background-color: $clouds;
+	display: flex;
+	justify-content: center;
+	margin-bottom: 60px;
+	flex-wrap: wrap;
+}
+
+.container {
+	width: 1280px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.section-heading {
+	width: 100%;
+	text-align: center;
+}
+
+.section-content {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.subsection {
+	margin-bottom: 30px;
+	background: darken($clouds, 10%);
+}
+
+.half-section {
+	width: 49%;
+}
+
+.third-section {
+	width: 32.5%;
+}
+
+.quarter-section {
+	width: 24%;
+}
+
+@media screen and (min-width: 320px) {
+	.container {
+		width: 100vw;
+	}
+}
