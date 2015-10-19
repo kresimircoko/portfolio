@@ -7,12 +7,6 @@
 		<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body>
-		<header class="site-header">
-			<div class="container">
-				<h1>Krešimir Čoko</h1>
-			</div>
-		</header>
-
 		<?php
 
 			include 'sections/hero.php';
@@ -24,4 +18,7 @@
 
 		?>
 	</body>
+	<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script src="js/scripts.js"></script>
 </html>

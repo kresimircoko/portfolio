@@ -1,0 +1,22 @@
+.main-nav {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
+
+.menu {
+	list-style: none;
+	padding: 0;
+	display: flex;
+	justify-content: space-around;
+}
+
+.hamburger {
+	pointer-events: click;
+}
+
+// @media screen and (min-width: 320px) {
+// 	.main-nav {
+// 		display: none;
+// 	}
+// }

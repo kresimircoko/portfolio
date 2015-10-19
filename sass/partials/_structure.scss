@@ -9,7 +9,6 @@
 }
 
 .main-section {
-	background-color: $clouds;
 	display: flex;
 	justify-content: center;
 	margin-bottom: 60px;
@@ -37,7 +36,6 @@
 
 .subsection {
 	margin-bottom: 30px;
-	background: darken($clouds, 10%);
 }
 
 .full-section {

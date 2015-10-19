@@ -1,4 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,400italic|Montserrat:400,700|Raleway:400,500,600,700|Open+Sans+Condensed:700);
+@import "https://fonts.googleapis.com/icon?family=Material+Icons";
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
@@ -322,7 +323,6 @@ ul li, ol li {
 }
 
 .main-section {
-  background-color: #ecf0f1;
   display: flex;
   justify-content: center;
   margin-bottom: 60px;
@@ -350,7 +350,6 @@ ul li, ol li {
 
 .subsection {
   margin-bottom: 30px;
-  background: #cfd9db;
 }
 
 .full-section {
@@ -447,4 +446,37 @@ hr {
 .white-inset {
   border-top: 1px solid rgba(0, 0, 0, 0.1);
   border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+.main-nav {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.hamburger {
+  pointer-events: click;
+}
+
+.hero-section {
+  background-color: #ecf0f1;
+  height: 75vh;
+}
+
+.hero-section .half-section {
+  position: relative;
+}
+
+.site-heading {
+  line-height: 1;
+  padding: 0;
+  position: absolute;
+  bottom: 0;
 }
