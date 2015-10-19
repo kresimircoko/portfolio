@@ -1,10 +1,15 @@
 .work-section {
+	background-color: rgba(0,0,0,0);
 
 	.subsection {
 		margin: 0;
 		display: flex;
 		justify-content: center;
 		padding: 40px 0;
+
+		&:first-of-type {
+			padding: 0;
+		}
 	}
 
 	.subsection-heading {
@@ -26,4 +31,35 @@
 
 #neobit-work {
 	background-color: $orange;
+}
+
+@media screen and (max-width: 768px) {
+	.work-section {
+
+		.container {
+			justify-content: center;
+		}
+		
+
+		.subsection {
+			width: 80%;
+		}
+	}
+}
+
+@media screen and (max-width: 640px) {
+	.work-section {
+		.half-section {
+			width: 80%;
+		}
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.work-section {
+		
+		.subsection {
+			width: 90%;
+		}
+	}
 }

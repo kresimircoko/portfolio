@@ -10,3 +10,21 @@
 		text-transform: none;
 	}	
 }
+
+@media screen and (max-width: 768px) {
+	.contact-section {
+
+		.section-heading {
+			font-size: 42px;
+		}
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.contact-section {
+
+		.section-heading {
+			font-size: 26px;
+		}
+	}
+}

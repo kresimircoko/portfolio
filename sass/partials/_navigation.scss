@@ -2,6 +2,8 @@
 	position: absolute;
 	bottom: 0;
 	width: 100%;
+	opacity: 0;
+	transform: translateX(-50px);
 }
 
 .menu {
@@ -11,19 +13,40 @@
 	justify-content: space-around;
 
 	a {
-		color: $emerald;
+		color: $clouds;
 		font-weight: 500;
 		font-family: $Rale;
 		font-size: 21px;
+		text-shadow: 1px 1px 1px #000;
 	}
 }
 
-.hamburger {
-	pointer-events: click;
+@media screen and (max-width: 1280px) {
+	.menu a {
+		font-size: 18px;
+	}
 }
 
-// @media screen and (min-width: 320px) {
-// 	.main-nav {
-// 		display: none;
-// 	}
-// }
+@media screen and (max-width: 1024px) {
+	.menu {
+		flex-direction: column;
+		align-items: center;
+	}
+}
+
+@media screen and (max-width: 480px) {
+
+	.nav-subsection {
+		order: 1;
+	}
+
+	.main-nav {
+		position: initial;
+	}
+
+	.menu {
+		
+	}
+
+	
+}

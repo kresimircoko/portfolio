@@ -1,6 +1,15 @@
 .hero-section {
-	background-color: $clouds;
+	background-image: linear-gradient(
+      rgba(black, 0.2), 
+      rgba(black, 0.2)
+    ), url(../assets/img/hero.jpg);
+	background-size: cover;
+	background-attachment: fixed;
 	height: 70vh;
+
+	.container {
+		padding: 0;
+	}
 
 	.half-section {
 		position: relative;
@@ -8,10 +17,66 @@
 }
 
 .site-heading {
+	opacity: 0;
+	transform: translateX(50px);
 	line-height: 1.2;
 	padding: 0;
 	position: absolute;
 	bottom: 0;
 	font-size: 120px;
 	text-align: right;
+	color: $grey;
+
+	&.shown {
+		color: $clouds;
+	}
 }
+
+.shown {
+	opacity: 1;
+	transform: translateX(0);
+	transition: all .3s ease-in-out;
+}
+
+
+@media screen and (max-width: 1280px) {
+	.site-heading {
+		font-size: 100px;
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.site-heading {
+		font-size: 80px;
+		padding: 0 40px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.hero-section {
+		.subsection {
+			justify-content: center;
+			display: flex;
+		}
+	}
+
+	.site-heading {
+		right: 0;
+		font-size: 62px;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.subsection {
+		margin: 0;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.site-heading {
+		padding: 0px;
+		text-align: center;
+		position: initial;
+	}
+}
+
