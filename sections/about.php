@@ -1,4 +1,4 @@
-<section class="about-section main-section">
+<section id="about" class="about-section main-section">
 	<div class="container">
 
 		<div class="full-section subsection">

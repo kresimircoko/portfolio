@@ -1,4 +1,4 @@
-<section class="contact-section main-section">
+<section id="contact" class="contact-section main-section">
 	<div class="container">
 		
 		<div class="full-section subsection">

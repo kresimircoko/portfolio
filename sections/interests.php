@@ -1,4 +1,4 @@
-<section class="interests-section main-section">
+<section id="interests" class="interests-section main-section">
 	<div class="container">
 
 		<div class="full-section">

@@ -1,4 +1,4 @@
-<section class="achievements-section main-section">
+<section id="achievements" class="achievements-section main-section">
 	<div class="container">
 
 		<div class="full-section subsection">

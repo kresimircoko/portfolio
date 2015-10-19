@@ -5,11 +5,11 @@
 
 			<nav class="main-nav">
 				<ul class="menu">
-					<li><a href="#">About me</a></li>
-					<li><a href="#">Achievements</a></li>
-					<li><a href="#">Interests</a></li>
-					<li><a href="#">Work</a></li>
-					<li><a href="#">Contact</a></li>
+					<li><a href="#about">About me</a></li>
+					<li><a href="#achievements">Achievements</a></li>
+					<li><a href="#interests">Interests</a></li>
+					<li><a href="#work">Work</a></li>
+					<li><a href="#contact">Contact</a></li>
 				</ul>
 			</nav>
 		</div>
