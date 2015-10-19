@@ -1,0 +1,32 @@
+.achievements-section {
+	background: $clouds;
+
+	.subsection {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin: 0;
+	}
+}
+
+.achi-year {
+	width: 100%;
+	font-family: $OSC;
+	font-weight: 600;
+	text-align: center;
+}
+
+.achi-hr {
+	width: 80%;
+}
+
+.achi-heading {
+	padding: 20px 0 0 0;
+	font-size: 60px;
+}
+
+.achi-subsection {
+	.subsection:last-of-type {
+		flex-direction: column;
+	}
+}

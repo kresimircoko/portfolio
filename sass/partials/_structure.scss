@@ -1,3 +1,7 @@
+* {
+	box-sizing: border-box;
+}
+
 .site-header {
 	display: flex;
 	width: 100%;
@@ -11,7 +15,6 @@
 .main-section {
 	display: flex;
 	justify-content: center;
-	margin-bottom: 60px;
 	flex-wrap: wrap;
 }
 
@@ -20,6 +23,14 @@
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
+	padding: 60px 0;
+}
+
+.full-container {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
 }
 
 .section-heading {

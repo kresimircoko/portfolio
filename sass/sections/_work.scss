@@ -1,0 +1,29 @@
+.work-section {
+
+	.subsection {
+		margin: 0;
+		display: flex;
+		justify-content: center;
+		padding: 40px 0;
+	}
+
+	.subsection-heading {
+		padding: 10px 0;
+	}
+
+	p {
+		padding: 10px 0;
+	}
+}
+
+#sandra-work {
+	background-color: $blue;
+}
+
+#scsi-work {
+	background-color: $turquoise;
+}
+
+#neobit-work {
+	background-color: $orange;
+}

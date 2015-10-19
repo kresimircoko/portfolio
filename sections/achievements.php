@@ -7,35 +7,91 @@
 			</h1>
 		</div>
 
-		<div class="full-section subsection">
-			<p>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe ea dolores repellendus, minus quos quidem modi omnis, culpa porro fugiat ullam quaerat. Deleniti dicta distinctio fugit ab magni suscipit, ad.
-			</p>
-		</div>
+		<div class="full-section achi-subsection subsection">
 
-		<div class="full-section subsection">
-			<p>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis quos laborum dicta minima distinctio rem modi porro optio expedita, suscipit aperiam voluptatum cumque, nam minus, esse vitae maxime ipsum hic!
-			</p>
-		</div>
+			<div class="quarter-section subsection">
+				<h1 class="achi-year">2013</h1>
+			</div>
 
-		<div class="full-section subsection">
-			<p>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt iusto autem voluptate similique vitae, soluta consequatur voluptatem. Animi, earum vel esse consectetur amet, doloremque cupiditate sit, repellat mollitia rerum iusto.
-			</p>
-		</div>
+			<div class="half-section subsection">
+				<hr class="white-inset achi-hr">
+			</div>
 
-		<div class="full-section subsection">
-			<p>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur delectus dolorum maxime praesentium veritatis, dicta quis quae excepturi at magni vero saepe doloremque asperiores obcaecati earum. Veritatis nulla error vitae!
-			</p>
-		</div>
+			<div class="quarter-section subsection">
+				<h1 class="achi-heading">VUŠ</h1>
+				<p class="achi-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+			</div>
 		
-		<div class="full-section subsection">
-			<p>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, culpa accusamus eum harum, ad vero fugit fugiat, saepe odit sapiente laboriosam qui? Commodi pariatur quisquam nostrum dolorum nam dolorem dolor!
-			</p>
 		</div>
+
+		<div class="full-section achi-subsection subsection">
+
+			<div class="quarter-section subsection">
+				<h1 class="achi-year">2014</h1>
+			</div>
+
+			<div class="half-section subsection">
+				<hr class="white-inset achi-hr">
+			</div>
+
+			<div class="quarter-section subsection">
+				<h1 class="achi-heading">Algebra</h1>
+				<p class="achi-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+			</div>
+		
+		</div>
+
+		<div class="full-section achi-subsection subsection">
+
+			<div class="quarter-section subsection">
+				<h1 class="achi-year">2014</h1>
+			</div>
+
+			<div class="half-section subsection">
+				<hr class="white-inset achi-hr">
+			</div>
+
+			<div class="quarter-section subsection">
+				<h1 class="achi-heading">IT Division</h1>
+				<p class="achi-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+			</div>
+		
+		</div>
+
+		<div class="full-section achi-subsection subsection">
+
+			<div class="quarter-section subsection">
+				<h1 class="achi-year">2015</h1>
+			</div>
+
+			<div class="half-section subsection">
+				<hr class="white-inset achi-hr">
+			</div>
+
+			<div class="quarter-section subsection">
+				<h1 class="achi-heading">Paper</h1>
+				<p class="achi-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+			</div>
+		
+		</div>
+
+		<div class="full-section achi-subsection subsection">
+
+			<div class="quarter-section subsection">
+				<h1 class="achi-year">2015</h1>
+			</div>
+
+			<div class="half-section subsection">
+				<hr class="white-inset achi-hr">
+			</div>
+
+			<div class="quarter-section subsection">
+				<h1 class="achi-heading">SCSI</h1>
+				<p class="achi-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+			</div>
+		
+		</div>
+
 
 	</div>
 </section>

@@ -1,5 +1,4 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,400italic|Montserrat:400,700|Raleway:400,500,600,700|Open+Sans+Condensed:700);
-@import "https://fonts.googleapis.com/icon?family=Material+Icons";
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
@@ -226,12 +225,16 @@ h1, h2, h3 {
 h1 {
   font-family: Open Sans Condensed, sans-serif;
   text-transform: uppercase;
-  font-size: 48px;
+  font-size: 72px;
 }
 
 h2 {
   font-size: 36px;
   font-family: Raleway, sans-serif;
+}
+
+.section-heading {
+  text-decoration: underline;
 }
 
 .subheading {
@@ -312,6 +315,10 @@ ul li, ol li {
   }
 }
 
+* {
+  box-sizing: border-box;
+}
+
 .site-header {
   display: flex;
   width: 100%;
@@ -325,7 +332,6 @@ ul li, ol li {
 .main-section {
   display: flex;
   justify-content: center;
-  margin-bottom: 60px;
   flex-wrap: wrap;
 }
 
@@ -334,6 +340,14 @@ ul li, ol li {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  padding: 60px 0;
+}
+
+.full-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .section-heading {
@@ -461,13 +475,20 @@ hr {
   justify-content: space-around;
 }
 
+.menu a {
+  color: #2ecc71;
+  font-weight: 500;
+  font-family: Raleway, sans-serif;
+  font-size: 21px;
+}
+
 .hamburger {
   pointer-events: click;
 }
 
 .hero-section {
   background-color: #ecf0f1;
-  height: 75vh;
+  height: 70vh;
 }
 
 .hero-section .half-section {
@@ -475,8 +496,141 @@ hr {
 }
 
 .site-heading {
-  line-height: 1;
+  line-height: 1.2;
   padding: 0;
   position: absolute;
   bottom: 0;
+  font-size: 120px;
+  text-align: right;
+}
+
+.about-section {
+  background-color: #2ecc71;
+}
+
+.achievements-section {
+  background: #ecf0f1;
+}
+
+.achievements-section .subsection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+
+.achi-year {
+  width: 100%;
+  font-family: Open Sans Condensed, sans-serif;
+  font-weight: 600;
+  text-align: center;
+}
+
+.achi-hr {
+  width: 80%;
+}
+
+.achi-heading {
+  padding: 20px 0 0 0;
+  font-size: 60px;
+}
+
+.achi-subsection .subsection:last-of-type {
+  flex-direction: column;
+}
+
+.interests-section .full-container {
+  position: relative;
+}
+
+.interests-section .subsection {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.interests-section .subsection p {
+  padding: 0;
+}
+
+.interests-section .subsection .third-section {
+  margin: 40px 0;
+}
+
+.interests-section .half-section {
+  width: 50%;
+}
+
+.interests-section .subsection-heading {
+  padding: 10px 0;
+}
+
+#html-section {
+  background: #E53935;
+  text-align: right;
+}
+
+#css-section {
+  background: #2ecc71;
+}
+
+#js-section {
+  background: #F7CA18;
+  text-align: right;
+}
+
+#wp-section {
+  background: #AAA;
+}
+
+#floating-subsection {
+  width: 400px;
+  height: 400px;
+  background: #ecf0f1;
+  box-shadow: 0 0 30px #666;
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.work-section .subsection {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  padding: 40px 0;
+}
+
+.work-section .subsection-heading {
+  padding: 10px 0;
+}
+
+.work-section p {
+  padding: 10px 0;
+}
+
+#sandra-work {
+  background-color: #3498db;
+}
+
+#scsi-work {
+  background-color: #1abc9c;
+}
+
+#neobit-work {
+  background-color: #F9690E;
+}
+
+.contact-section {
+  background-color: #2ecc71;
+}
+
+.contact-section .subsection {
+  margin: 0;
+}
+
+.contact-section .section-heading {
+  text-decoration: none;
+  text-transform: none;
 }

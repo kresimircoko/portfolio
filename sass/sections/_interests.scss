@@ -1,0 +1,58 @@
+.interests-section {
+
+	.full-container {
+		position: relative;
+	}
+
+	.subsection {
+		margin: 0;
+		display: flex;
+		justify-content: center;
+
+		p {
+			padding: 0;
+		}
+
+		.third-section {
+			margin: 40px 0;
+		}
+	}
+
+	.half-section {
+		width: 50%;
+	}
+
+	.subsection-heading {
+		padding: 10px 0;
+	}
+}
+
+#html-section {
+	background: $red;
+	text-align: right;
+}
+
+#css-section {
+	background: $emerald;
+}
+
+#js-section {
+	background: $yellow;
+	text-align: right;
+}
+
+#wp-section {
+	background: $grey;
+}
+
+#floating-subsection {
+	width: 400px;
+	height: 400px;
+	background: $clouds;
+	box-shadow: 0 0 30px $mediumGrey;
+	position: absolute;
+	z-index: 2;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}

@@ -9,6 +9,13 @@
 	padding: 0;
 	display: flex;
 	justify-content: space-around;
+
+	a {
+		color: $emerald;
+		font-weight: 500;
+		font-family: $Rale;
+		font-size: 21px;
+	}
 }
 
 .hamburger {

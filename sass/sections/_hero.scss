@@ -1,6 +1,6 @@
 .hero-section {
 	background-color: $clouds;
-	height: 75vh;
+	height: 70vh;
 
 	.half-section {
 		position: relative;
@@ -8,8 +8,10 @@
 }
 
 .site-heading {
-	line-height: 1;
+	line-height: 1.2;
 	padding: 0;
 	position: absolute;
 	bottom: 0;
+	font-size: 120px;
+	text-align: right;
 }
