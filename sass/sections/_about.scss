@@ -1,15 +1,24 @@
 .about-section {
-	background-color: $emerald;
+	background-color: white;
 
 	.half-section {
 		opacity: 0;
 		transform: translateY(20px);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
 
 		&.shown {
 			opacity: 1;
-		  transform: translateY(0);
+			transform: translateY(0);
 			transition: all 0.3s ease-in-out
 		}
 	}
+}
+
+.profile-img {
+	width: 300px;
+	border-radius: 50%;
 }
 

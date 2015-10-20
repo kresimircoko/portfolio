@@ -15,9 +15,26 @@
 	a {
 		color: $clouds;
 		font-weight: 500;
-		font-family: $Rale;
 		font-size: 21px;
-		text-shadow: 1px 1px 1px #000;
+		font-family: $Mont;
+
+		&:hover {
+			text-decoration: none;
+			
+			&:after {
+				width: 100%;
+				background: $emerald;;
+			}
+		}
+
+		&:after {
+			content: '';
+			display: block;
+			height: 3px;
+			width: 0;
+			background: $clouds;
+			transition: width .5s ease, background-color .5s ease;
+		}
 	}
 }
 

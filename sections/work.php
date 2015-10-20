@@ -1,7 +1,7 @@
 <section id="work" class="work-section main-section">
 	<div class="container">
 
-		<div class="full-section subsection">
+		<div class="full-section">
 			<h1 class="section-heading">
 				Work
 			</h1>

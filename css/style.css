@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700|Raleway:400,500,600,700|Open+Sans+Condensed:700&subset=latin,latin-ext);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700|Fira+Sans:700,300,500|Raleway:400,500,600,700|Open+Sans+Condensed:700&subset=latin,latin-ext);
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
@@ -223,19 +223,19 @@ h1, h2, h3 {
 }
 
 h1 {
-  font-family: Open Sans Condensed, sans-serif;
+  font-family: Montserrat, sans-serif;
   text-transform: uppercase;
-  font-size: 72px;
+  font-size: 58px;
 }
 
 h2 {
   font-size: 36px;
-  font-family: Raleway, sans-serif;
+  font-family: Fira Sans, sans-serif;
 }
 
 .section-heading {
-  text-decoration: underline;
   opacity: 0;
+  padding: 1em 0;
 }
 
 .subheading {
@@ -326,6 +326,12 @@ ul li, ol li {
   box-sizing: border-box;
 }
 
+*.shown {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 0.3s ease-in-out;
+}
+
 .site-header {
   display: flex;
   width: 100%;
@@ -347,7 +353,7 @@ ul li, ol li {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 60px 0;
+  padding: 0 0 72px 0;
 }
 
 .full-container {
@@ -487,9 +493,26 @@ hr {
 .menu a {
   color: #ecf0f1;
   font-weight: 500;
-  font-family: Raleway, sans-serif;
   font-size: 21px;
-  text-shadow: 1px 1px 1px #000;
+  font-family: Montserrat, sans-serif;
+}
+
+.menu a:hover {
+  text-decoration: none;
+}
+
+.menu a:hover:after {
+  width: 100%;
+  background: #2ecc71;
+}
+
+.menu a:after {
+  content: '';
+  display: block;
+  height: 3px;
+  width: 0;
+  background: #ecf0f1;
+  transition: width 0.5s ease, background-color 0.5s ease;
 }
 
 @media screen and (max-width: 1280px) {
@@ -515,7 +538,7 @@ hr {
 }
 
 .hero-section {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../assets/img/hero.jpg);
+  background-image: linear-gradient(rgba(51, 51, 51, 0.5), rgba(51, 51, 51, 0.5)), url(../assets/img/hero.jpg);
   background-size: cover;
   background-attachment: fixed;
   height: 70vh;
@@ -589,12 +612,16 @@ hr {
 }
 
 .about-section {
-  background-color: #2ecc71;
+  background-color: white;
 }
 
 .about-section .half-section {
   opacity: 0;
   transform: translateY(20px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .about-section .half-section.shown {
@@ -603,35 +630,104 @@ hr {
   transition: all 0.3s ease-in-out;
 }
 
+.profile-img {
+  width: 300px;
+  border-radius: 50%;
+}
+
 .achievements-section {
   background: #ecf0f1;
 }
 
-.achievements-section .subsection {
+.achievements-section .third-section {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   margin: 0;
+  opacity: 0;
+  transform: translateX(-50px);
 }
 
-.achi-year {
-  width: 100%;
-  font-family: Open Sans Condensed, sans-serif;
-  font-weight: 600;
+.achievements-section .third-section:hover .achi-number {
+  background-color: #e0e0e0;
+  transition: .3s ease-in-out;
+}
+
+.achievements-section .third-section:hover .achi-number h2 {
+  color: #898989;
+  transition: all 0.3s ease-in-out;
+}
+
+.achievements-section .third-section.shown {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 0.3s ease-in-out;
+}
+
+.achi-number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 68px;
+  height: 68px;
+  border-radius: 100%;
+  border: 2px solid #d6d6d6;
+  background-color: #eaeaea;
+}
+
+.achi-number h2 {
+  font-family: Fira Sans, sans-serif;
+  padding: 0;
+  font-weight: 700;
+  font-size: 30px;
+  color: #9d9d9d;
+  position: relative;
+  z-index: 5;
+}
+
+.achi-number:before {
+  content: "";
+  display: block;
+  border-top: solid 2px #d6d6d6;
+  width: 88%;
+  height: 1px;
+  position: absolute;
+  left: 58%;
+  top: 7%;
+  z-index: 1;
+}
+
+.fa.achi-icon {
+  font-size: 92px;
+  padding: 60px 0 15px;
+}
+
+.achi-title {
+  font-size: 26px;
+  color: #666;
+  font-family: Fira Sans, sans-serif;
+  padding: 20px 0 0 0;
+}
+
+.achi-text {
   text-align: center;
 }
 
-.achi-hr {
-  width: 80%;
+#algebra-achi i {
+  color: #F9690E;
 }
 
-.achi-heading {
-  padding: 20px 0 0 0;
-  font-size: 60px;
+#division-achi i {
+  color: #3498db;
 }
 
-.achi-subsection .subsection:last-of-type {
-  flex-direction: column;
+#paper-achi i {
+  color: #1abc9c;
+}
+
+#paper-achi .achi-number:before {
+  display: none;
 }
 
 .interests-section .full-container {
@@ -724,14 +820,23 @@ hr {
 }
 
 .work-section {
-  background-color: transparent;
+  background-color: white;
 }
 
 .work-section .subsection {
+  opacity: 0;
+  transform: translateX(-100px);
+  transition: 0.5s ease-in-out;
   margin: 0;
   display: flex;
   justify-content: center;
   padding: 40px 0;
+}
+
+.work-section .subsection.shown {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 0.3s ease-in-out;
 }
 
 .work-section .subsection:first-of-type {
@@ -752,10 +857,24 @@ hr {
 
 #scsi-work {
   background-color: #1abc9c;
+  transform: translateX(100px);
+}
+
+#scsi-work.shown {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 0.5s ease-in-out;
 }
 
 #neobit-work {
   background-color: #F9690E;
+  transform: translateX(-100px);
+}
+
+#neobit-work.shown {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 0.5s ease-in-out;
 }
 
 @media screen and (max-width: 768px) {
@@ -783,6 +902,10 @@ hr {
   background-color: #2ecc71;
 }
 
+.contact-section .container {
+  padding: 0;
+}
+
 .contact-section .subsection {
   margin: 0;
 }
@@ -790,6 +913,7 @@ hr {
 .contact-section .section-heading {
   text-decoration: none;
   text-transform: none;
+  font-family: Fira Sans, sans-serif;
 }
 
 @media screen and (max-width: 768px) {

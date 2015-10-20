@@ -1,32 +1,103 @@
 .achievements-section {
 	background: $clouds;
 
-	.subsection {
+	.third-section {
 		display: flex;
+		flex-direction: column;
 		align-items: center;
 		justify-content: center;
 		margin: 0;
+		opacity: 0;
+		transform: translateX(-50px);
+
+		&:hover {
+			.achi-number {
+				background-color: lighten(#BCBCBC, 14%);
+				transition: .3s ease-in-out;
+
+				h2 {
+					color: darken(#BCBCBC, 20%);
+					transition: all 0.3s ease-in-out;
+				}
+			}
+		}
+
+		&.shown {
+			opacity: 1;
+		  transform: translateY(0);
+			transition: all 0.3s ease-in-out;
+		}
 	}
 }
 
-.achi-year {
-	width: 100%;
-	font-family: $OSC;
-	font-weight: 600;
+.achi-number {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 68px;
+	height: 68px;
+	border-radius: 100%;
+	border: 2px solid lighten(#BCBCBC, 10%);
+	background-color: lighten(#BCBCBC, 18%);
+
+	h2 {
+		font-family: $FS;
+		padding: 0;
+		font-weight: 700;
+		font-size: 30px;
+		color: darken(#BCBCBC, 12%);
+		position: relative;
+		z-index: 5;
+	}
+
+	&:before {
+		content: "";
+		display: block;
+		border-top: solid 2px lighten(#BCBCBC, 10%);
+		width: 88%;
+		height: 1px;
+		position: absolute;
+		left: 58%;
+		top: 7%;
+		z-index: 1;
+	}
+}
+
+.fa.achi-icon {
+	font-size: 92px;
+	padding: 60px 0 15px;
+}
+
+.achi-title {
+	font-size: 26px;
+	color: $mediumGrey;
+	font-family: $FS;
+	padding: 20px 0 0 0;
+}
+
+
+.achi-text {
 	text-align: center;
 }
 
-.achi-hr {
-	width: 80%;
+#algebra-achi {
+	i {
+		color: $orange;
+	}
 }
 
-.achi-heading {
-	padding: 20px 0 0 0;
-	font-size: 60px;
+#division-achi {
+	i {
+		color: $blue;
+	}
 }
 
-.achi-subsection {
-	.subsection:last-of-type {
-		flex-direction: column;
+#paper-achi {
+	i {
+		color: $turquoise;
+	}
+
+	.achi-number:before {
+		display: none;
 	}
 }

@@ -1,6 +1,10 @@
 .contact-section {
 	background-color: $emerald;
 
+	.container {
+		padding: 0;
+	}
+
 	.subsection {
 		margin: 0;
 	}
@@ -8,6 +12,7 @@
 	.section-heading {
 		text-decoration: none;
 		text-transform: none;
+		font-family: $FS;
 	}	
 }
 

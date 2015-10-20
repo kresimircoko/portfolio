@@ -8,10 +8,11 @@
 		</div>
 
 		<div class="half-section subsection">
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil dolorum nostrum placeat laboriosam. Id voluptas perferendis illum voluptatem vero dolores eum praesentium accusamus eos. Placeat voluptatibus, dolorum iure numquam voluptates!</p>
+			<img class="profile-img" src="./assets/img/profile_big.jpg" alt="Krešimir Čoko">
 		</div>
 
 		<div class="half-section subsection">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus aspernatur dolor esse rerum, illo nemo quasi enim, voluptate perferendis officiis quisquam culpa sequi tenetur error dicta molestiae a maxime est!</p>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus aspernatur dolor esse rerum, illo nemo quasi enim, voluptate perferendis officiis quisquam culpa sequi tenetur error dicta molestiae a maxime est!</p>
 		</div>
 

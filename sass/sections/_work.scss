@@ -1,11 +1,20 @@
 .work-section {
-	background-color: rgba(0,0,0,0);
+	background-color: white;
 
 	.subsection {
+		opacity: 0;
+		transform: translateX(-100px);
+		transition: 0.5s ease-in-out;
 		margin: 0;
 		display: flex;
 		justify-content: center;
 		padding: 40px 0;
+
+		&.shown {
+			opacity: 1;
+			transform: translateY(0);
+			transition: all 0.3s ease-in-out
+		}
 
 		&:first-of-type {
 			padding: 0;
@@ -27,10 +36,23 @@
 
 #scsi-work {
 	background-color: $turquoise;
+	transform: translateX(100px);
+	&.shown {
+			opacity: 1;
+			transform: translateY(0);
+			transition: all 0.5s ease-in-out
+		}
 }
 
 #neobit-work {
 	background-color: $orange;
+	transform: translateX(-100px);
+
+	&.shown {
+			opacity: 1;
+			transform: translateY(0);
+			transition: all 0.5s ease-in-out
+		}
 }
 
 @media screen and (max-width: 768px) {

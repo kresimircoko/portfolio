@@ -6,19 +6,19 @@ h1, h2, h3 {
 }
 
 h1 {
-	font-family: $OSC;
+	font-family: $Mont;
 	text-transform: uppercase;
-	font-size: 72px;
+	font-size: 58px;
 }
 
 h2 {
 	font-size: 36px;
-	font-family: $Rale;
+	font-family: $FS;
 }
 
 .section-heading {
-	text-decoration: underline;
 	opacity: 0;
+	padding: 1em 0;
 }
 
 .subheading {

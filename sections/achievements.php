@@ -6,92 +6,42 @@
 				Achievements
 			</h1>
 		</div>
-
-		<div class="full-section achi-subsection subsection">
-
-			<div class="quarter-section subsection">
-				<h1 class="achi-year">2013</h1>
-			</div>
-
-			<div class="half-section subsection">
-				<hr class="white-inset achi-hr">
-			</div>
-
-			<div class="quarter-section subsection">
-				<h1 class="achi-heading">VUŠ</h1>
-				<p class="achi-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-			</div>
 		
+		<div id="algebra-achi" class="third-section subsection">
+			<div class="achi-number"><h2>1</h2></div>
+
+			<i class="fa fa-certificate achi-icon"></i>
+
+			<h2 class="achi-title">Web Design Certificate</h2>
+			
+			<p class="achi-text">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur veritatis autem iste, harum?
+			</p>
 		</div>
 
-		<div class="full-section achi-subsection subsection">
+		<div id="division-achi" class="third-section subsection">
+			<div class="achi-number"><h2>2</h2></div>
 
-			<div class="quarter-section subsection">
-				<h1 class="achi-year">2014</h1>
-			</div>
+			<i class="fa fa-code achi-icon"></i>
 
-			<div class="half-section subsection">
-				<hr class="white-inset achi-hr">
-			</div>
-
-			<div class="quarter-section subsection">
-				<h1 class="achi-heading">Algebra</h1>
-				<p class="achi-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-			</div>
-		
+			<h2 class="achi-title">IT Division</h2>
+			
+			<p class="achi-text">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur veritatis autem iste, harum?
+			</p>
 		</div>
 
-		<div class="full-section achi-subsection subsection">
+		<div id="paper-achi" class="third-section subsection">
+			<div class="achi-number"><h2>3</h2></div>
 
-			<div class="quarter-section subsection">
-				<h1 class="achi-year">2014</h1>
-			</div>
+			<i class="fa fa-file-text-o achi-icon"></i>
 
-			<div class="half-section subsection">
-				<hr class="white-inset achi-hr">
-			</div>
-
-			<div class="quarter-section subsection">
-				<h1 class="achi-heading">IT Division</h1>
-				<p class="achi-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-			</div>
-		
+			<h2 class="achi-title">Paper</h2>
+			
+			<p class="achi-text">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur veritatis autem iste, harum?
+			</p>
 		</div>
-
-		<div class="full-section achi-subsection subsection">
-
-			<div class="quarter-section subsection">
-				<h1 class="achi-year">2015</h1>
-			</div>
-
-			<div class="half-section subsection">
-				<hr class="white-inset achi-hr">
-			</div>
-
-			<div class="quarter-section subsection">
-				<h1 class="achi-heading">Paper</h1>
-				<p class="achi-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-			</div>
-		
-		</div>
-
-		<div class="full-section achi-subsection subsection">
-
-			<div class="quarter-section subsection">
-				<h1 class="achi-year">2015</h1>
-			</div>
-
-			<div class="half-section subsection">
-				<hr class="white-inset achi-hr">
-			</div>
-
-			<div class="quarter-section subsection">
-				<h1 class="achi-heading">SCSI</h1>
-				<p class="achi-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-			</div>
-		
-		</div>
-
 
 	</div>
 </section>

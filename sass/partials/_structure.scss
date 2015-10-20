@@ -1,5 +1,11 @@
 * {
 	box-sizing: border-box;
+
+	&.shown {
+		opacity: 1;
+		transform: translateY(0);
+		transition: all 0.3s ease-in-out
+	}
 }
 
 .site-header {
@@ -23,7 +29,7 @@
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	padding: 60px 0;
+	padding: 0 0 72px 0;
 }
 
 .full-container {
