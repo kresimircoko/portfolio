@@ -267,12 +267,6 @@ p {
 
 a {
   text-decoration: none;
-  color: #E53935;
-  font-weight: 500;
-}
-
-a:hover {
-  text-decoration: underline;
 }
 
 ul, ol {
@@ -343,6 +337,7 @@ ul li, ol li {
 }
 
 .main-section {
+  width: 100vw;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -553,6 +548,7 @@ hr {
 }
 
 .site-heading {
+  font-family: Fira Sans, sans-serif;
   opacity: 0;
   transform: translateX(50px);
   line-height: 1.2;
@@ -618,6 +614,7 @@ hr {
 .about-section .half-section {
   opacity: 0;
   transform: translateY(20px);
+  margin: 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -633,6 +630,13 @@ hr {
 .profile-img {
   width: 300px;
   border-radius: 50%;
+  border: 8px solid #ecf0f1;
+}
+
+@media screen and (max-width: 768px) {
+  .profile-img {
+    width: 70%;
+  }
 }
 
 .achievements-section {
@@ -663,6 +667,13 @@ hr {
   opacity: 1;
   transform: translateY(0);
   transition: all 0.3s ease-in-out;
+}
+
+.achi-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .achi-number {
@@ -705,8 +716,8 @@ hr {
 
 .achi-title {
   font-size: 26px;
-  color: #666;
-  font-family: Fira Sans, sans-serif;
+  font-family: Montserrat, sans-serif;
+  text-transform: uppercase;
   padding: 20px 0 0 0;
 }
 
@@ -730,6 +741,49 @@ hr {
   display: none;
 }
 
+@media screen and (max-width: 1280px) {
+  .achi-title {
+    font-size: 24px;
+  }
+  .achi-number:before {
+    width: 86%;
+    height: 1px;
+    position: absolute;
+    left: 60%;
+    top: 7%;
+    z-index: 1;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .achi-title {
+    font-size: 18px;
+  }
+  .achi-number:before {
+    width: 78%;
+    height: 1px;
+    position: absolute;
+    left: 63%;
+    top: 8%;
+    z-index: 1;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .achievements-section .container {
+    width: 80%;
+  }
+  .achievements-section .subsection {
+    flex-direction: row;
+  }
+  .achi-content {
+    width: 80%;
+  }
+  .achi-number:before {
+    display: none;
+  }
+}
+
 .interests-section .full-container {
   position: relative;
 }
@@ -742,6 +796,19 @@ hr {
   margin: 0;
   display: flex;
   justify-content: center;
+  background-image: url(../assets/img/interests-bg.png);
+  background-position: center;
+}
+
+.interests-section .subsection:after {
+  position: absolute;
+  font-family: FontAwesome;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  font-size: 180px;
+  transition: .3s ease-in-out;
 }
 
 .interests-section .subsection p {
@@ -750,6 +817,7 @@ hr {
 
 .interests-section .subsection .third-section {
   margin: 40px 0;
+  z-index: 2;
 }
 
 .interests-section .half-section {
@@ -761,33 +829,108 @@ hr {
 }
 
 #html-section {
-  background: #E53935;
+  background-color: #F9690E;
   text-align: right;
+  position: relative;
+  transition: .3s ease-in-out;
+}
+
+#html-section:hover {
+  background-color: rgba(249, 105, 14, 0.7);
+  transition: .3s ease-in-out;
+}
+
+#html-section:hover:after {
+  color: #fa8236;
+}
+
+#html-section:after {
+  content: "\f13b";
+  color: #fa8840;
 }
 
 #css-section {
-  background: #2ecc71;
+  background-color: #3498db;
+  position: relative;
+  transition: .3s ease-in-out;
+}
+
+#css-section:hover {
+  background-color: rgba(52, 152, 219, 0.7);
+  transition: .3s ease-in-out;
+}
+
+#css-section:hover:after {
+  color: #57aae1;
+}
+
+#css-section:after {
+  content: "\f13c";
+  color: #75b9e7;
 }
 
 #js-section {
-  background: #F7CA18;
+  background-color: #F7CA18;
   text-align: right;
+  position: relative;
+  transition: .3s ease-in-out;
+}
+
+#js-section:hover {
+  background-color: rgba(247, 202, 24, 0.7);
+  transition: .3s ease-in-out;
+}
+
+#js-section:hover:after {
+  color: #F7CA18;
+}
+
+#js-section:after {
+  content: "\f1cc";
+  color: #fadb62;
 }
 
 #wp-section {
-  background: #AAA;
+  background-color: #ecf0f1;
+  position: relative;
+  transition: .3s ease-in-out;
+}
+
+#wp-section:hover {
+  background-color: rgba(170, 170, 170, 0.7);
+  transition: .3s ease-in-out;
+}
+
+#wp-section:hover:after {
+  color: rgba(236, 240, 241, 0.5);
+}
+
+#wp-section:after {
+  content: "\f19a";
+  color: white;
 }
 
 #floating-subsection {
-  width: 400px;
-  height: 400px;
-  background: #ecf0f1;
-  box-shadow: 0 0 30px #666;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: none;
+  background-color: #ecf0f1;
+  box-shadow: 0 0 12px #666;
   position: absolute;
   z-index: 2;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+#floating-subsection h1 {
+  background-image: url(../assets/img/interests-bg.png);
+  background-color: rgba(46, 204, 113, 0.5);
+  padding: 20px;
+  margin: 20px;
+  border: 6px solid #333;
+  transition: .3s ease-in-out;
 }
 
 @media screen and (max-width: 1280px) {
@@ -825,8 +968,8 @@ hr {
 
 .work-section .subsection {
   opacity: 0;
-  transform: translateX(-100px);
-  transition: 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  background-position: 50% 0%;
   margin: 0;
   display: flex;
   justify-content: center;
@@ -835,12 +978,26 @@ hr {
 
 .work-section .subsection.shown {
   opacity: 1;
-  transform: translateY(0);
-  transition: all 0.3s ease-in-out;
+  transform: translate(0);
+  transition: all 0.5s ease-in-out;
 }
 
-.work-section .subsection:first-of-type {
-  padding: 0;
+.work-section .subsection .half-section {
+  transition: all 0.5s ease-in-out;
+}
+
+.work-section .subsection .half-section h2, .work-section .subsection .half-section p {
+  color: #ecf0f1;
+  text-shadow: 1px 1px 3px #333;
+}
+
+.work-section .subsection:hover {
+  background-position: center;
+}
+
+.work-section .subsection:hover .half-section {
+  transform: translateX(50%);
+  transition: all 0.5s ease-in-out;
 }
 
 .work-section .subsection-heading {
@@ -852,12 +1009,28 @@ hr {
 }
 
 #sandra-work {
-  background-color: #3498db;
+  background-image: linear-gradient(rgba(102, 102, 102, 0.6), rgba(102, 102, 102, 0.6)), url(../assets/img/sandra.png);
+  transition: 0.5s ease-in-out;
+  transform: translateX(-50px);
+}
+
+#sandra-work h2 {
+  color: #F9690E;
+}
+
+#sandra-work.shown {
+  opacity: 1;
+  transform: translateX(0);
+  transition: all 0.5s ease-in-out;
 }
 
 #scsi-work {
-  background-color: #1abc9c;
-  transform: translateX(100px);
+  background-image: linear-gradient(rgba(102, 102, 102, 0.6), rgba(102, 102, 102, 0.6)), url(../assets/img/scsi.png);
+  transform: translateX(50px);
+}
+
+#scsi-work h2 {
+  color: #F7CA18;
 }
 
 #scsi-work.shown {
@@ -867,8 +1040,12 @@ hr {
 }
 
 #neobit-work {
-  background-color: #F9690E;
-  transform: translateX(-100px);
+  background-image: linear-gradient(rgba(102, 102, 102, 0.6), rgba(102, 102, 102, 0.6)), url(../assets/img/neobit.png);
+  transform: translateX(-50px);
+}
+
+#neobit-work h2 {
+  color: #2ecc71;
 }
 
 #neobit-work.shown {
@@ -877,12 +1054,19 @@ hr {
   transition: all 0.5s ease-in-out;
 }
 
+@media screen and (max-width: 1024px) {
+  #sandra-work, #scsi-work, #neobit-work {
+    transform: translateY(50px);
+  }
+}
+
 @media screen and (max-width: 768px) {
   .work-section .container {
     justify-content: center;
+    padding-bottom: 0;
   }
   .work-section .subsection {
-    width: 80%;
+    width: 100%;
   }
 }
 
@@ -893,7 +1077,7 @@ hr {
 }
 
 @media screen and (max-width: 480px) {
-  .work-section .subsection {
+  .work-section .half-section {
     width: 90%;
   }
 }
@@ -908,12 +1092,47 @@ hr {
 
 .contact-section .subsection {
   margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .contact-section .section-heading {
   text-decoration: none;
   text-transform: none;
   font-family: Fira Sans, sans-serif;
+}
+
+.contact-icons-subsection {
+  padding: 0 0 20px 0;
+}
+
+.contact-icons-subsection a {
+  padding: 0 10px;
+  font-size: 18px;
+  color: #ecf0f1;
+  font-family: Montserrat, sans-serif;
+}
+
+.contact-icons-subsection i {
+  font-size: 24px;
+  text-shadow: 1px 1px 1px #124f2c;
+}
+
+.fa-twitter {
+  color: #55ACEE;
+}
+
+.fa-facebook {
+  color: #45619D;
+}
+
+.fa-linkedin {
+  color: #4E4E4E;
+}
+
+.fa-github {
+  color: #333;
 }
 
 @media screen and (max-width: 768px) {

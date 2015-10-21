@@ -30,6 +30,13 @@
 	}
 }
 
+.achi-content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
 .achi-number {
 	display: flex;
 	align-items: center;
@@ -70,8 +77,8 @@
 
 .achi-title {
 	font-size: 26px;
-	color: $mediumGrey;
-	font-family: $FS;
+	font-family: $Mont;
+	text-transform: uppercase;
 	padding: 20px 0 0 0;
 }
 
@@ -95,6 +102,63 @@
 #paper-achi {
 	i {
 		color: $turquoise;
+	}
+
+	.achi-number:before {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 1280px) {
+	.achi-title {
+		font-size: 24px;
+	}
+
+	.achi-number {
+
+		&:before {
+			width: 86%;
+			height: 1px;
+			position: absolute;
+			left: 60%;
+			top: 7%;
+			z-index: 1;
+		}
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.achi-title {
+		font-size: 18px;
+	}
+
+	.achi-number {
+
+		&:before {
+			width: 78%;
+			height: 1px;
+			position: absolute;
+			left: 63%;
+			top: 8%;
+			z-index: 1;
+		}
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.achievements-section {
+
+		.container {
+			width: 80%;
+		}
+
+		.subsection {
+			flex-direction: row;
+		}
+	}
+
+	.achi-content {
+		width: 80%;
 	}
 
 	.achi-number:before {

@@ -3,8 +3,8 @@
 
 	.subsection {
 		opacity: 0;
-		transform: translateX(-100px);
-		transition: 0.5s ease-in-out;
+		transition: all 0.5s ease-in-out;
+		background-position: 50% 0%;
 		margin: 0;
 		display: flex;
 		justify-content: center;
@@ -12,12 +12,26 @@
 
 		&.shown {
 			opacity: 1;
-			transform: translateY(0);
-			transition: all 0.3s ease-in-out
+			transform: translate(0);
+			transition: all 0.5s ease-in-out
 		}
 
-		&:first-of-type {
-			padding: 0;
+		.half-section {
+			transition: all 0.5s ease-in-out;
+
+			h2, p {
+				color: $clouds;
+				text-shadow: 1px 1px 3px $darkGrey;
+			}
+		}
+
+		&:hover {
+			background-position: center;
+
+			.half-section {
+				transform: translateX(50%);
+				transition: all 0.5s ease-in-out;
+			}
 		}
 	}
 
@@ -30,29 +44,66 @@
 	}
 }
 
+
 #sandra-work {
-	background-color: $blue;
+	background-image: linear-gradient(
+			rgba($mediumGrey, 0.6), 
+			rgba($mediumGrey, 0.6)
+		), url(../assets/img/sandra.png);
+	transition: 0.5s ease-in-out;
+	transform: translateX(-50px);
+
+	h2 {
+		color: $orange;
+	}
+
+	&.shown {
+		opacity: 1;
+		transform: translateX(0);
+		transition: all 0.5s ease-in-out
+	}
 }
 
 #scsi-work {
-	background-color: $turquoise;
-	transform: translateX(100px);
+	background-image: linear-gradient(
+			rgba($mediumGrey, 0.6), 
+			rgba($mediumGrey, 0.6)
+		), url(../assets/img/scsi.png);
+	transform: translateX(50px);
+
+	h2 {
+		color: $yellow;
+	}
+
 	&.shown {
-			opacity: 1;
-			transform: translateY(0);
-			transition: all 0.5s ease-in-out
-		}
+		opacity: 1;
+		transform: translateY(0);
+		transition: all 0.5s ease-in-out
+	}
 }
 
 #neobit-work {
-	background-color: $orange;
-	transform: translateX(-100px);
+	background-image: linear-gradient(
+			rgba($mediumGrey, 0.6), 
+			rgba($mediumGrey, 0.6)
+		), url(../assets/img/neobit.png);
+	transform: translateX(-50px);
+
+	h2 {
+		color: $emerald;
+	}
 
 	&.shown {
-			opacity: 1;
-			transform: translateY(0);
-			transition: all 0.5s ease-in-out
-		}
+		opacity: 1;
+		transform: translateY(0);
+		transition: all 0.5s ease-in-out
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	#sandra-work, #scsi-work, #neobit-work {
+		transform: translateY(50px);
+	}
 }
 
 @media screen and (max-width: 768px) {
@@ -60,11 +111,11 @@
 
 		.container {
 			justify-content: center;
+			padding-bottom: 0;
 		}
-		
 
 		.subsection {
-			width: 80%;
+			width: 100%;
 		}
 	}
 }
@@ -80,7 +131,7 @@
 @media screen and (max-width: 480px) {
 	.work-section {
 		
-		.subsection {
+		.half-section {
 			width: 90%;
 		}
 	}

@@ -7,32 +7,38 @@
 			</h1>
 		</div>
 
-		<div id="sandra-work" class="full-section subsection">
-			<div class="half-section">
-				<h2 class="subsection-heading">Apartments Sandra</h2>
-				<p>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe ea dolores repellendus, minus quos quidem modi omnis.
-				</p>
+		<a href="http://apartmanisandra.com">
+			<div id="sandra-work" class="full-section subsection">
+				<div class="half-section">
+					<h2 class="subsection-heading">Apartments Sandra</h2>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe ea dolores repellendus, minus quos quidem modi omnis.
+					</p>
+				</div>
 			</div>
-		</div>
+		</a>
 
-		<div id="scsi-work" class="full-section subsection">
-			<div class="half-section">
-				<h2 class="subsection-heading">Student Center Šibenik</h2>
-				<p>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe ea dolores repellendus, minus quos quidem modi omnis.
-				</p>
+		<a href="http://scsi.alwaysdata.net">
+			<div id="scsi-work" class="full-section subsection">
+				<div class="half-section">
+					<h2 class="subsection-heading">Student Center Šibenik</h2>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe ea dolores repellendus, minus quos quidem modi omnis.
+					</p>
+				</div>
 			</div>
-		</div>
+		</a>
 
-		<div id="neobit-work" class="full-section subsection">
-			<div class="half-section">
-				<h2 class="subsection-heading">Neobit Design</h2>
-				<p>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe ea dolores repellendus, minus quos quidem modi omnis.
-				</p>
+		<a href="http://neobit.hol.es">
+			<div id="neobit-work" class="full-section subsection">
+				<div class="half-section">
+					<h2 class="subsection-heading">Neobit Design</h2>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe ea dolores repellendus, minus quos quidem modi omnis.
+					</p>
+				</div>
 			</div>
-		</div>
+		</a>
 
 	</div>
 </section>

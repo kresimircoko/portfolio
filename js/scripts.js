@@ -2,15 +2,18 @@ $(function() {
 
 	$(function() {
 		smoothScroll(600);
+		interestsBGStuff();
+		//workBGStuff();
 	});
 
 	$(window).scroll(function() {
 		startAbout();
 
-		startAchievements();
 		startAchievementsHeading();
-
+		startAchievements();
+		
 		startInterestsHeading();
+		// startInterests();
 		
 		startWorkHeading();
 		startWork();
@@ -74,7 +77,17 @@ $(function() {
 	}
 
 	// Interests Section Animations
+	
 
+	// Interests BG Changes on hover
+	function interestsBGStuff() {
+		$('.interests-section .subsection').hover(function(){
+			$('#floating-subsection h1').css('background-color', $(this).data('color'));
+		}, function(){
+			// off > revert the color
+			$('#floating-subsection h1').css('background-color', $('#floating-subsection h1').data('orig-color'));
+		});
+	}
 
 
 	// Work Heading Animation
@@ -110,6 +123,9 @@ $(function() {
 			}, 1200);
 		}
 	}
+
+	// Work BG Stuff
+	
 
 	// Contact Section Animations
 	function startContact() {
