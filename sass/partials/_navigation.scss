@@ -1,6 +1,4 @@
 .main-nav {
-	position: absolute;
-	bottom: 0;
 	width: 100%;
 	opacity: 0;
 	transform: translateX(-50px);
@@ -20,7 +18,7 @@
 
 		&:hover {
 			text-decoration: none;
-			
+
 			&:after {
 				width: 100%;
 				background: $emerald;;
@@ -45,25 +43,107 @@
 }
 
 @media screen and (max-width: 1024px) {
+	.main-nav {
+		position: initial;
+	}
+
 	.menu {
 		flex-direction: column;
 		align-items: center;
 	}
 }
 
+@media screen and (max-width: 768px) {
+	.mobile-header {
+		a {
+			color: $darkGrey;
+			font-weight: 500;
+			font-family: $Mont;
+		}
+
+		img {
+			height: 64px;
+		}
+	}
+
+	.mobile-nav {
+		display: none;
+		width: 100%;
+		background: white;
+		transition: .3s ease-in-out;
+
+		&.is-open {
+			display: block;
+		}
+	}
+
+	.mobile-menu {
+		width: 100%;
+		list-style: none;
+		padding: 0;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+
+		li {
+			padding: 10px 0;
+		}
+	}
+
+	.hamburger {
+		width: 50px;
+		height: 40px;
+		display: flex;
+		align-items: center;
+
+		span,
+		span:before,
+		span:after {
+			display: block;
+			content: '';
+			height: 2px;
+			width: 100%;
+			background: #333;
+			position: relative;
+			transition: all 0.2s ease-in-out;
+		}
+
+		span:before {
+			top: 12px;
+		}
+
+		span:after {
+			top: -14px;
+		}
+
+		&.is-open {
+			span {
+				background: transparent;
+
+				&:before,
+				&:after {
+					transform-origin: center;
+					transform: rotate(45deg);
+					top: 0;
+				}
+
+				&:after {
+					transform: rotate(-45deg);
+				}
+			}
+		}
+	}
+}
+
 @media screen and (max-width: 480px) {
+	.mobile-header {
+		li {
+			padding: 5px 0;
+		}
 
-	.nav-subsection {
-		order: 1;
+		a {
+			font-size: 14px;
+		}
 	}
-
-	.main-nav {
-		position: initial;
-	}
-
-	.menu {
-		
-	}
-
-	
 }

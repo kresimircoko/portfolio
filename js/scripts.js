@@ -1,6 +1,7 @@
 $(function() {
 
 	$(function() {
+		mobileNav();
 		smoothScroll(600);
 		interestsBGStuff();
 		//workBGStuff();
@@ -11,15 +12,22 @@ $(function() {
 
 		startAchievementsHeading();
 		startAchievements();
-		
+
 		startInterestsHeading();
 		// startInterests();
-		
+
 		startWorkHeading();
 		startWork();
 
 		startContact();
 	});
+
+	// Mobile Navigation
+	function mobileNav() {
+	  $('.hamburger').on('click', function() {
+	    $('.hamburger, .mobile-nav').toggleClass('is-open');
+	  });
+	}
 
 	// Site Heading Animations
 	setTimeout(function() {
@@ -77,7 +85,7 @@ $(function() {
 	}
 
 	// Interests Section Animations
-	
+
 
 	// Interests BG Changes on hover
 	function interestsBGStuff() {
@@ -125,13 +133,19 @@ $(function() {
 	}
 
 	// Work BG Stuff
-	
+
 
 	// Contact Section Animations
 	function startContact() {
 		var wScroll = $(window).scrollTop();
+		if($(window).width() < 400) {
+			var substractScrollHeight = 100;
+		}
+		else  {
+			var substractScrollHeight = 100;
+		}
 
-		if($('.contact-section').offset().top - $(window).height()/1.2 < wScroll) {
+		if($('.contact-section').offset().top - $(window).height()/1.2 - substractScrollHeight < wScroll) {
 			setTimeout(function() {
 				$('.contact-section .section-heading').addClass('shown');
 			}, 100);
@@ -153,5 +167,5 @@ $(function() {
 			}
 	});
 }
-	
+
 });
