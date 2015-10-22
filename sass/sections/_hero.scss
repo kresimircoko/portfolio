@@ -68,6 +68,10 @@
 @media screen and (max-width: 768px) {
 	.hero-section {
 		height: 60vh;
+
+		.half-section {
+			display: none;
+		}
 	}
 
 	.site-heading {
@@ -86,10 +90,6 @@
 			justify-content: space-around;
 			align-items: center;
 		}
-	}
-
-	.half-section {
-		display: none;
 	}
 
 }

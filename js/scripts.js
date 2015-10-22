@@ -2,6 +2,7 @@ $(function() {
 
 	$(function() {
 		mobileNav();
+		burger();
 		smoothScroll(600);
 		interestsBGStuff();
 		//workBGStuff();
@@ -22,12 +23,37 @@ $(function() {
 		startContact();
 	});
 
+	// SVG Burger from Codepen
+
+	function burger() {
+		var trigger = $('#hamburger'),
+	      isClosed = true;
+
+	  trigger.click(function () {
+	    burgerTime();
+	  });
+
+	  function burgerTime() {
+	    if (isClosed == true) {
+	      trigger.addClass('is-open');
+	      trigger.removeClass('is-closed');
+	      isClosed = false;
+	    }
+			else {
+	      trigger.addClass('is-closed');
+	      trigger.removeClass('is-open');
+	      isClosed = true;
+	    }
+	  }
+	}
+
+
 	// Mobile Navigation
 	function mobileNav() {
-	  $('.hamburger').on('click', function() {
-	    $('.hamburger, .mobile-nav').toggleClass('is-open');
-	  });
-	}
+	  $('#hamburger').on('click', function() {
+	     $('.mobile-nav').toggleClass('is-open');
+	   });
+	 }
 
 	// Site Heading Animations
 	setTimeout(function() {

@@ -65,9 +65,22 @@
 	}
 }
 
+@media screen and (max-width: 560px) {
+	.contact-section {
+		.section-heading {
+			font-size: 36px;
+		}
+	}
+
+	.icons-section {
+		a {
+			font-size: 14px;
+		}
+	}
+}
+
 @media screen and (max-width: 480px) {
 	.contact-section {
-
 		.section-heading {
 			font-size: 26px;
 		}
@@ -75,6 +88,24 @@
 
 	.contact-icons-subsection {
 		a {
+			font-size: 12px;
+		}
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.contact-section {
+		.section-heading {
+			font-size: 24px;
+		}
+	}
+
+	.contact-icons-subsection {
+		a {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
 			font-size: 12px;
 		}
 	}

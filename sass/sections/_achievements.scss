@@ -147,7 +147,6 @@
 
 @media screen and (max-width: 768px) {
 	.achievements-section {
-
 		.container {
 			width: 80%;
 		}
@@ -163,5 +162,30 @@
 
 	.achi-number:before {
 		display: none;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.achievements-section {
+		.container {
+			width: 100%;
+			padding-bottom: 0;
+		}
+	}
+
+	.achi-number {
+		display: none;
+	}
+
+	.achi-content {
+		background: white;
+		margin-bottom: 20px;
+		width: 90%;
+		padding: 0 10px;
+		box-shadow: 0px 0px 1px 1px darken($clouds, 10%);
+	}
+
+	.fa.achi-icon {
+		padding-top: 30px;
 	}
 }
