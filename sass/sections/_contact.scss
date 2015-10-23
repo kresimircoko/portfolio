@@ -16,16 +16,26 @@
 		text-decoration: none;
 		text-transform: none;
 		font-family: $FS;
+		padding: 90px 0;
 	}
 }
 
 .contact-icons-subsection {
 	padding:0 0 20px 0;
+
 	a {
 		padding: 0 10px;
 		font-size: 18px;
 		color: $clouds;
 		font-family: $Mont;
+		transform: translateX(-100px);
+		transition: .3s ease-in-out;
+		opacity: 0;
+
+		&.shown {
+			opacity: 1;
+			transform: translateX(0);
+		}
 	}
 
 	i {
@@ -55,6 +65,7 @@
 
 		.section-heading {
 			font-size: 42px;
+			padding: 60px 0;
 		}
 	}
 
@@ -83,6 +94,7 @@
 	.contact-section {
 		.section-heading {
 			font-size: 26px;
+			padding: 40px 0;
 		}
 	}
 

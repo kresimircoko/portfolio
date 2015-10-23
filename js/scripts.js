@@ -5,7 +5,6 @@ $(function() {
 		burger();
 		smoothScroll(600);
 		interestsBGStuff();
-		//workBGStuff();
 	});
 
 	$(window).scroll(function() {
@@ -15,16 +14,16 @@ $(function() {
 		startAchievements();
 
 		startInterestsHeading();
-		// startInterests();
+		startInterests();
 
 		startWorkHeading();
 		startWork();
 
 		startContact();
+		startContactSocial();
 	});
 
 	// SVG Burger from Codepen
-
 	function burger() {
 		var trigger = $('#hamburger'),
 	      isClosed = true;
@@ -46,7 +45,6 @@ $(function() {
 	    }
 	  }
 	}
-
 
 	// Mobile Navigation
 	function mobileNav() {
@@ -111,18 +109,44 @@ $(function() {
 	}
 
 	// Interests Section Animations
+	function startInterests() {
+		var wScroll = $(window).scrollTop();
+
+		if($('.interests-section').offset().top - $(window).height()/1.2 + 50 < wScroll) {
+			setTimeout(function() {
+				$('#html-section').addClass('shown');
+			}, 300);
+		}
+
+		if($('.interests-section').offset().top - $(window).height()/1.2 + 50 < wScroll) {
+			setTimeout(function() {
+				$('#css-section').addClass('shown');
+			}, 600);
+		}
+
+		if($('.interests-section').offset().top - $(window).height()/1.2 + 250 < wScroll) {
+			setTimeout(function() {
+				$('#js-section').addClass('shown');
+			}, 300);
+		}
+
+		if($('.interests-section').offset().top - $(window).height()/1.2 + 250 < wScroll) {
+			setTimeout(function() {
+				$('#wp-section').addClass('shown');
+			}, 600);
+		}
+	}
 
 
 	// Interests BG Changes on hover
 	function interestsBGStuff() {
 		$('.interests-section .subsection').hover(function(){
 			$('#floating-subsection h1').css('background-color', $(this).data('color'));
-		}, function(){
+		}, function() {
 			// off > revert the color
 			$('#floating-subsection h1').css('background-color', $('#floating-subsection h1').data('orig-color'));
 		});
 	}
-
 
 	// Work Heading Animation
 	function startWorkHeading() {
@@ -148,40 +172,43 @@ $(function() {
 		if($('.work-section').offset().top - $(window).height()/1.2 + 150 < wScroll) {
 			setTimeout(function() {
 				$('#scsi-work').addClass('shown');
-			}, 800);
+			}, 700);
 		}
 
 		if($('.work-section').offset().top - $(window).height()/1.2 + 350 < wScroll) {
 			setTimeout(function() {
 				$('#neobit-work').addClass('shown');
-			}, 1200);
+			}, 1000);
 		}
 	}
-
-	// Work BG Stuff
-
 
 	// Contact Section Animations
 	function startContact() {
 		var wScroll = $(window).scrollTop();
-		if($(window).width() < 400) {
-			var substractScrollHeight = 100;
-		}
-		else  {
-			var substractScrollHeight = 100;
-		}
 
-		if($('.contact-section').offset().top - $(window).height()/1.2 - substractScrollHeight < wScroll) {
+		if($('.contact-section').offset().top - $(window).height()/1.2 < wScroll) {
 			setTimeout(function() {
 				$('.contact-section .section-heading').addClass('shown');
 			}, 100);
 		}
 	}
 
+	// Contact Section Social Icons Animations
+	function startContactSocial() {
+		var wScroll = $(window).scrollTop();
+
+		if($('.contact-section').offset().top - $(window).height()/1.2 + 40 < wScroll) {
+			$('.contact-section a').each(function(i){
+				setTimeout(function(){
+					$('.contact-section a').eq(i).addClass('shown');
+				}, 100 * i);
+			});
+		}
+	}
 
 	// Smooth Scroll
 	function smoothScroll (duration) {
-	$('a[href^="#"]').on('click', function(event) {
+		$('a[href^="#"]').on('click', function(event) {
 
 			var target = $( $(this).attr('href') );
 
@@ -191,7 +218,7 @@ $(function() {
 							scrollTop: target.offset().top
 					}, duration);
 			}
-	});
-}
+		});
+	}
 
 });

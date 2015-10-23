@@ -6,7 +6,7 @@
 				Achievements
 			</h1>
 		</div>
-		
+
 		<div id="algebra-achi" class="third-section subsection">
 			<div class="achi-number"><h2>1</h2></div>
 
@@ -14,9 +14,13 @@
 				<i class="fa fa-certificate achi-icon"></i>
 
 				<h2 class="achi-title">Web Design Certificate</h2>
-				
+
 				<p class="achi-text">
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur veritatis autem iste, harum?
+					Completed the
+					<a href="http://www.algebra.hr/edukacija/programi-obrazovanja-za-kreativce/web-dizajner/">
+						web design training
+					</a>
+					at Algebra containing HTML, CSS, SEO & Wordpress courses.
 				</p>
 			</div>
 		</div>
@@ -28,9 +32,9 @@
 				<i class="fa fa-code achi-icon"></i>
 
 				<h2 class="achi-title">IT Division</h2>
-				
+
 				<p class="achi-text">
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur veritatis autem iste, harum?
+					Developing websites for the local student community as a member of the IT Division at Polytechnic of Sibenik .
 				</p>
 			</div>
 		</div>
@@ -42,9 +46,11 @@
 				<i class="fa fa-file-text-o achi-icon"></i>
 
 				<h2 class="achi-title">Paper</h2>
-				
+
 				<p class="achi-text">
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur veritatis autem iste, harum?
+					Designed a fictional app and wrote a scientific paper for the Conference -
+					<a href="http://konferencija.vus.hr">
+					“Challenges of today: tourism and local development“</a>.
 				</p>
 			</div>
 		</div>

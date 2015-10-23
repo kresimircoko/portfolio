@@ -85,6 +85,16 @@
 
 .achi-text {
 	text-align: center;
+
+	a {
+		color: $turquoise;
+		font-weight: 500;
+		transition: .1s ease-in-out;
+
+		&:hover {
+			border-bottom: 2px solid $turquoise;
+		}
+	}
 }
 
 #algebra-achi {

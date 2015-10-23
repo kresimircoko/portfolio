@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700|Fira+Sans:700,300,500|Raleway:400,500,600,700|Open+Sans+Condensed:700&subset=latin,latin-ext);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700|Fira+Sans:700|Raleway:400);
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
@@ -258,7 +258,7 @@ h2 {
 
 p {
   font-size: 21px;
-  color: #333;
+  color: #555;
   font-family: Raleway, sans-serif;
   line-height: 1.4;
   margin: 0;
@@ -488,7 +488,6 @@ hr {
 
 .menu a {
   color: #ecf0f1;
-  font-weight: 500;
   font-size: 21px;
   font-family: Montserrat, sans-serif;
 }
@@ -1115,6 +1114,16 @@ hr {
   text-align: center;
 }
 
+.achi-text a {
+  color: #1abc9c;
+  font-weight: 500;
+  transition: .1s ease-in-out;
+}
+
+.achi-text a:hover {
+  border-bottom: 2px solid #1abc9c;
+}
+
 #algebra-achi i {
   color: #F9690E;
 }
@@ -1207,7 +1216,6 @@ hr {
   display: flex;
   justify-content: center;
   background-image: url(../assets/img/interests-bg.png);
-  background-position: center;
 }
 
 .interests-section .subsection:after {
@@ -1223,6 +1231,7 @@ hr {
 
 .interests-section .subsection p {
   padding: 0;
+  color: #333;
 }
 
 .interests-section .subsection .third-section {
@@ -1243,6 +1252,13 @@ hr {
   text-align: right;
   position: relative;
   transition: .3s ease-in-out;
+  transform: translateX(-100px);
+  opacity: 0;
+}
+
+#html-section.shown {
+  opacity: 1;
+  transform: translate(0);
 }
 
 #html-section:hover {
@@ -1263,6 +1279,13 @@ hr {
   background-color: #3498db;
   position: relative;
   transition: .3s ease-in-out;
+  transform: translateX(100px);
+  opacity: 0;
+}
+
+#css-section.shown {
+  opacity: 1;
+  transform: translate(0);
 }
 
 #css-section:hover {
@@ -1284,6 +1307,13 @@ hr {
   text-align: right;
   position: relative;
   transition: .3s ease-in-out;
+  transform: translateX(-100px);
+  opacity: 0;
+}
+
+#js-section.shown {
+  opacity: 1;
+  transform: translate(0);
 }
 
 #js-section:hover {
@@ -1304,6 +1334,13 @@ hr {
   background-color: #ecf0f1;
   position: relative;
   transition: .3s ease-in-out;
+  transform: translateX(100px);
+  opacity: 0;
+}
+
+#wp-section.shown {
+  opacity: 1;
+  transform: translate(0);
 }
 
 #wp-section:hover {
@@ -1354,6 +1391,9 @@ hr {
 }
 
 @media screen and (max-width: 1024px) {
+  #html-section, #css-section, #js-section, #wp-section {
+    transform: translateY(50px);
+  }
   #floating-subsection {
     width: 180px;
     height: 180px;
@@ -1516,6 +1556,7 @@ hr {
   text-decoration: none;
   text-transform: none;
   font-family: Fira Sans, sans-serif;
+  padding: 90px 0;
 }
 
 .contact-icons-subsection {
@@ -1527,6 +1568,14 @@ hr {
   font-size: 18px;
   color: #ecf0f1;
   font-family: Montserrat, sans-serif;
+  transform: translateX(-100px);
+  transition: .3s ease-in-out;
+  opacity: 0;
+}
+
+.contact-icons-subsection a.shown {
+  opacity: 1;
+  transform: translateX(0);
 }
 
 .contact-icons-subsection i {
@@ -1553,6 +1602,7 @@ hr {
 @media screen and (max-width: 768px) {
   .contact-section .section-heading {
     font-size: 42px;
+    padding: 60px 0;
   }
   .contact-icons-subsection a {
     font-size: 16px;
@@ -1571,6 +1621,7 @@ hr {
 @media screen and (max-width: 480px) {
   .contact-section .section-heading {
     font-size: 26px;
+    padding: 40px 0;
   }
   .contact-icons-subsection a {
     font-size: 12px;

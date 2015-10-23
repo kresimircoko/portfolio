@@ -13,7 +13,6 @@
 		display: flex;
 		justify-content: center;
 		background-image: url(../assets/img/interests-bg.png);
-		background-position: center;
 
 		&:after {
 		position: absolute;
@@ -28,6 +27,7 @@
 
 		p {
 			padding: 0;
+			color: #333;
 		}
 
 		.third-section {
@@ -50,6 +50,13 @@
 	text-align: right;
 	position: relative;
 	transition: .3s ease-in-out;
+	transform: translateX(-100px);
+	opacity: 0;
+
+	&.shown {
+		opacity: 1;
+		transform: translate(0);
+	}
 
 	&:hover {
 		background-color: rgba($orange, 0.7);
@@ -70,6 +77,13 @@
 	background-color: $blue;
 	position: relative;
 	transition: .3s ease-in-out;
+	transform: translateX(100px);
+	opacity: 0;
+
+	&.shown {
+		opacity: 1;
+		transform: translate(0);
+	}
 
 	&:hover {
 		background-color: rgba($blue, 0.7);
@@ -91,6 +105,13 @@
 	text-align: right;
 	position: relative;
 	transition: .3s ease-in-out;
+	transform: translateX(-100px);
+	opacity: 0;
+
+	&.shown {
+		opacity: 1;
+		transform: translate(0);
+	}
 
 	&:hover {
 		background-color: rgba($yellow, 0.7);
@@ -111,6 +132,13 @@
 	background-color: $clouds;
 	position: relative;
 	transition: .3s ease-in-out;
+	transform: translateX(100px);
+	opacity: 0;
+
+	&.shown {
+		opacity: 1;
+		transform: translate(0);
+	}
 
 	&:hover {
 		background-color: rgba($grey, 0.7);
@@ -159,7 +187,7 @@
 			.third-section {
 					width: 50%;
 			}
-		}	
+		}
 	}
 
 	#floating-subsection {
@@ -167,8 +195,12 @@
 		height: 240px;
 	}
 }
-
 @media screen and (max-width: 1024px) {
+
+	#html-section, #css-section, #js-section, #wp-section {
+		transform: translateY(50px);
+	}
+
 	#floating-subsection {
 		width: 180px;
 		height: 180px;
