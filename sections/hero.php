@@ -3,7 +3,17 @@
 
 		<header class="mobile-header full-section">
 			<div class="container">
-				<text x="0" y="0" style="font-family: Open Sans,Fira Sans,Raleway,sans-serif; font-weight:bold; font-size:38px; fill :#333;">kč</text>
+
+				<text
+		       id="logo"
+		       y="475.21936"
+		       x="182.85715"
+		       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+		       xml:space="preserve"><tspan
+		         style="font-weight:bold;font-style:normal;font-variant:normal;font-size:38px;fill:#333333;fill-opacity:0.94117647"
+		         y="475.21936"
+		         x="182.85715"
+		         id="logo-span">kč</tspan></text>
 
 				<!-- SVG Burger Menu from Codepen -->
 				<div id="hamburger" class="hamburglar">

@@ -108,6 +108,16 @@
 	#sandra-work, #scsi-work, #neobit-work {
 		transform: translateY(50px);
 	}
+
+	.work-section {
+		.subsection:hover {
+			background-position: 50% 0;
+
+			.half-section {
+				transform: translateX(0);
+			}
+		}
+	}
 }
 
 @media screen and (max-width: 768px) {

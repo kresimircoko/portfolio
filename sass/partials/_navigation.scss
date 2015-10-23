@@ -54,6 +54,10 @@
 
 @media screen and (max-width: 768px) {
 	.mobile-header {
+		.container {
+			z-index: 2;
+		}
+
 		a {
 			color: $darkGrey;
 			font-weight: 500;
@@ -66,13 +70,16 @@
 	}
 
 	.mobile-nav {
-		display: none;
+		z-index: 1;
 		width: 100%;
 		background: white;
-		transition: .3s ease-in-out;
+		transition: .5s ease-in-out;
+		opacity: 0;
+		transform: translateY(-100%);
 
 		&.is-open {
-			display: block;
+			opacity: 1;
+			transform: translateY(0);
 		}
 	}
 

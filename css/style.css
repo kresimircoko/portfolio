@@ -527,6 +527,9 @@ hr {
 }
 
 @media screen and (max-width: 768px) {
+  .mobile-header .container {
+    z-index: 2;
+  }
   .mobile-header a {
     color: #333;
     font-weight: 500;
@@ -536,13 +539,16 @@ hr {
     height: 64px;
   }
   .mobile-nav {
-    display: none;
+    z-index: 1;
     width: 100%;
     background: white;
-    transition: .3s ease-in-out;
+    transition: .5s ease-in-out;
+    opacity: 0;
+    transform: translateY(-100%);
   }
   .mobile-nav.is-open {
-    display: block;
+    opacity: 1;
+    transform: translateY(0);
   }
   .mobile-menu {
     width: 100%;
@@ -907,6 +913,11 @@ hr {
 
 .hero-section .subsection {
   align-items: flex-end;
+}
+
+#logo-span {
+  font-family: Fira Sans, sans-serif;
+  color: #333;
 }
 
 .mobile-header {
@@ -1511,6 +1522,12 @@ hr {
 @media screen and (max-width: 1024px) {
   #sandra-work, #scsi-work, #neobit-work {
     transform: translateY(50px);
+  }
+  .work-section .subsection:hover {
+    background-position: 50% 0;
+  }
+  .work-section .subsection:hover .half-section {
+    transform: translateX(0);
   }
 }
 
