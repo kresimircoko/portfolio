@@ -12,7 +12,7 @@
 		margin: 0;
 		display: flex;
 		justify-content: center;
-		padding: 40px 0;
+		padding: 80px 0;
 
 		&.shown {
 			opacity: 1;
@@ -23,9 +23,10 @@
 		.half-section {
 			transition: all 0.5s ease-in-out;
 
-			h2, p {
-				color: $clouds;
+			h2 {
+				text-align: center;
 				text-shadow: 1px 1px 3px $darkGrey;
+				padding: 0;
 			}
 		}
 

@@ -15,23 +15,22 @@
 		background-image: url(../assets/img/interests-bg.png);
 
 		&:after {
-		position: absolute;
-		font-family: FontAwesome;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		z-index: 1;
-		font-size: 180px;
-		transition: .3s ease-in-out;
-	}
+			position: absolute;
+			font-family: FontAwesome;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			z-index: 1;
+			font-size: 120px;
+			transition: .3s ease-in-out;
+		}
 
 		p {
 			padding: 0;
 			color: #333;
 		}
 
-		.third-section {
-			margin: 40px 0;
+		.half-section {
 			z-index: 2;
 		}
 	}
@@ -41,7 +40,10 @@
 	}
 
 	.subsection-heading {
-		padding: 10px 0;
+		text-align: center;
+		padding: 50px 0;
+		color: $clouds;
+		text-shadow: 1px 1px 3px $darkGrey;
 	}
 }
 
@@ -155,6 +157,61 @@
 	}
 }
 
+#speaking-section {
+	background-color: $amethyst;
+	text-align: right;
+	position: relative;
+	transition: .3s ease-in-out;
+	transform: translateX(-100px);
+	opacity: 0;
+
+	&.shown {
+		opacity: 1;
+		transform: translate(0);
+	}
+
+	&:hover {
+		background-color: rgba($amethyst, 0.7);
+		transition: .3s ease-in-out;
+
+		&:after {
+			color: rgba($amethyst, .5);
+		}
+	}
+
+	&:after {
+		content: "\f130";
+		color: lighten($amethyst, 10%);
+	}
+}
+
+#gaming-section {
+	background-color: $mediumGrey;
+	position: relative;
+	transition: .3s ease-in-out;
+	transform: translateX(-100px);
+	opacity: 0;
+
+	&.shown {
+		opacity: 1;
+		transform: translate(0);
+	}
+
+	&:hover {
+		background-color: rgba($mediumGrey, 0.7);
+		transition: .3s ease-in-out;
+
+		&:after {
+			color: rgba($mediumGrey, .5);
+		}
+	}
+
+	&:after {
+		content: "\f1b6";
+		color: lighten($mediumGrey, 10%);
+	}
+}
+
 #floating-subsection {
 	display: flex;
 	align-items: center;
@@ -171,6 +228,7 @@
 	h1 {
 		background-image: url(../assets/img/interests-bg.png);
 		background-color: rgba($emerald, 0.5);
+		font-size: 42px;
 		padding: 20px;
 		margin: 20px;
 		border: 6px solid $darkGrey;

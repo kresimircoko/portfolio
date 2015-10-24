@@ -16,11 +16,11 @@
 				<h2 class="achi-title">Web Design Certificate</h2>
 
 				<p class="achi-text">
-					Completed the
+					Certificate for completing the
 					<a href="http://www.algebra.hr/edukacija/programi-obrazovanja-za-kreativce/web-dizajner/">
-						web design training
+						web design course
 					</a>
-					at Algebra containing HTML, CSS, SEO & Wordpress courses.
+					at Algebra containing HTML, CSS, Wordpress Theme Developoment & SEO.
 				</p>
 			</div>
 		</div>
@@ -34,7 +34,7 @@
 				<h2 class="achi-title">IT Division</h2>
 
 				<p class="achi-text">
-					Developing websites for the local student community as a member of the IT Division at Polytechnic of Sibenik .
+					Doing my best to make the local student community as best as possible by building websites as a member of the IT Division at Polytechnic of Sibenik.
 				</p>
 			</div>
 		</div>

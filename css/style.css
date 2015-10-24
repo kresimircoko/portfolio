@@ -1152,6 +1152,9 @@ hr {
 }
 
 @media screen and (max-width: 1280px) {
+  .achi-content {
+    min-height: 420px;
+  }
   .achi-title {
     font-size: 24px;
   }
@@ -1166,6 +1169,9 @@ hr {
 }
 
 @media screen and (max-width: 1024px) {
+  .achi-content {
+    min-height: 435px;
+  }
   .achi-title {
     font-size: 18px;
   }
@@ -1174,8 +1180,11 @@ hr {
     height: 1px;
     position: absolute;
     left: 63%;
-    top: 8%;
+    top: 7%;
     z-index: 1;
+  }
+  .achi-text {
+    line-height: 1.6;
   }
 }
 
@@ -1187,6 +1196,7 @@ hr {
     flex-direction: row;
   }
   .achi-content {
+    min-height: initial;
     width: 80%;
   }
   .achi-number:before {
@@ -1236,7 +1246,7 @@ hr {
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 1;
-  font-size: 180px;
+  font-size: 120px;
   transition: .3s ease-in-out;
 }
 
@@ -1245,8 +1255,7 @@ hr {
   color: #333;
 }
 
-.interests-section .subsection .third-section {
-  margin: 40px 0;
+.interests-section .subsection .half-section {
   z-index: 2;
 }
 
@@ -1255,7 +1264,10 @@ hr {
 }
 
 .interests-section .subsection-heading {
-  padding: 10px 0;
+  text-align: center;
+  padding: 50px 0;
+  color: #ecf0f1;
+  text-shadow: 1px 1px 3px #333;
 }
 
 #html-section {
@@ -1368,6 +1380,61 @@ hr {
   color: white;
 }
 
+#speaking-section {
+  background-color: #9b59b6;
+  text-align: right;
+  position: relative;
+  transition: .3s ease-in-out;
+  transform: translateX(-100px);
+  opacity: 0;
+}
+
+#speaking-section.shown {
+  opacity: 1;
+  transform: translate(0);
+}
+
+#speaking-section:hover {
+  background-color: rgba(155, 89, 182, 0.7);
+  transition: .3s ease-in-out;
+}
+
+#speaking-section:hover:after {
+  color: rgba(155, 89, 182, 0.5);
+}
+
+#speaking-section:after {
+  content: "\f130";
+  color: #b07cc6;
+}
+
+#gaming-section {
+  background-color: #666;
+  position: relative;
+  transition: .3s ease-in-out;
+  transform: translateX(-100px);
+  opacity: 0;
+}
+
+#gaming-section.shown {
+  opacity: 1;
+  transform: translate(0);
+}
+
+#gaming-section:hover {
+  background-color: rgba(102, 102, 102, 0.7);
+  transition: .3s ease-in-out;
+}
+
+#gaming-section:hover:after {
+  color: rgba(102, 102, 102, 0.5);
+}
+
+#gaming-section:after {
+  content: "\f1b6";
+  color: gray;
+}
+
 #floating-subsection {
   display: flex;
   align-items: center;
@@ -1385,6 +1452,7 @@ hr {
 #floating-subsection h1 {
   background-image: url(../assets/img/interests-bg.png);
   background-color: rgba(46, 204, 113, 0.5);
+  font-size: 42px;
   padding: 20px;
   margin: 20px;
   border: 6px solid #333;
@@ -1438,7 +1506,7 @@ hr {
   margin: 0;
   display: flex;
   justify-content: center;
-  padding: 40px 0;
+  padding: 80px 0;
 }
 
 .work-section .subsection.shown {
@@ -1451,9 +1519,10 @@ hr {
   transition: all 0.5s ease-in-out;
 }
 
-.work-section .subsection .half-section h2, .work-section .subsection .half-section p {
-  color: #ecf0f1;
+.work-section .subsection .half-section h2 {
+  text-align: center;
   text-shadow: 1px 1px 3px #333;
+  padding: 0;
 }
 
 .work-section .subsection:hover {

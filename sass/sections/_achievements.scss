@@ -120,6 +120,10 @@
 }
 
 @media screen and (max-width: 1280px) {
+	.achi-content {
+		min-height: 420px;
+	}
+
 	.achi-title {
 		font-size: 24px;
 	}
@@ -138,6 +142,10 @@
 }
 
 @media screen and (max-width: 1024px) {
+	.achi-content {
+		min-height: 435px;
+	}
+
 	.achi-title {
 		font-size: 18px;
 	}
@@ -149,9 +157,13 @@
 			height: 1px;
 			position: absolute;
 			left: 63%;
-			top: 8%;
+			top: 7%;
 			z-index: 1;
 		}
+	}
+
+	.achi-text {
+		line-height: 1.6;
 	}
 }
 
@@ -167,6 +179,7 @@
 	}
 
 	.achi-content {
+		min-height: initial;
 		width: 80%;
 	}
 

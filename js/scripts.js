@@ -121,19 +121,31 @@ $(function() {
 		if($('.interests-section').offset().top - $(window).height()/1.2 + 50 < wScroll) {
 			setTimeout(function() {
 				$('#css-section').addClass('shown');
-			}, 600);
+			}, 400);
 		}
 
-		if($('.interests-section').offset().top - $(window).height()/1.2 + 250 < wScroll) {
+		if($('.interests-section').offset().top - $(window).height()/1.2 + 100 < wScroll) {
 			setTimeout(function() {
 				$('#js-section').addClass('shown');
 			}, 300);
 		}
 
-		if($('.interests-section').offset().top - $(window).height()/1.2 + 250 < wScroll) {
+		if($('.interests-section').offset().top - $(window).height()/1.2 + 100 < wScroll) {
 			setTimeout(function() {
 				$('#wp-section').addClass('shown');
-			}, 600);
+			}, 400);
+		}
+
+		if($('.interests-section').offset().top - $(window).height()/1.2 + 150 < wScroll) {
+			setTimeout(function() {
+				$('#speaking-section').addClass('shown');
+			}, 300);
+		}
+
+		if($('.interests-section').offset().top - $(window).height()/1.2 + 150 < wScroll) {
+			setTimeout(function() {
+				$('#gaming-section').addClass('shown');
+			}, 400);
 		}
 	}
 
