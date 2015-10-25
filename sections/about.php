@@ -12,8 +12,8 @@
 		</div>
 
 		<div class="half-section subsection">
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus aspernatur dolor esse rerum, illo nemo quasi enim, voluptate perferendis officiis quisquam culpa sequi tenetur error dicta molestiae a maxime est!</p>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus aspernatur dolor esse rerum, illo nemo quasi enim, voluptate perferendis officiis quisquam culpa sequi tenetur error dicta molestiae a maxime est!</p>
+			<p>Student at Polytechnic of Sibenik where I am one of the people in charge of improving the student community by developing and redesigning websites. </p>
+			<p>Hard working when it comes to the things I love, which include mainly coding and gaming. Love to learn new things and pass the knowledge to everyone around me.</p>
 		</div>
 
 	</div>
