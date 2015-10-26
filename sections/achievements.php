@@ -21,6 +21,7 @@
 						web design course
 					</a>
 					at Algebra containing HTML, CSS, Wordpress Theme Developoment & SEO.
+					Keeping myself motivated.
 				</p>
 			</div>
 		</div>
@@ -35,6 +36,7 @@
 
 				<p class="achi-text">
 					Doing my best to make the local student community as best as possible by building websites as a member of the IT Division at Polytechnic of Sibenik.
+					Putting myself out there.
 				</p>
 			</div>
 		</div>
@@ -51,6 +53,7 @@
 					Designed a fictional app and wrote a scientific paper for the Conference -
 					<a href="http://konferencija.vus.hr">
 					“Challenges of today: tourism and local development“</a>.
+					Expanding my horizons.
 				</p>
 			</div>
 		</div>

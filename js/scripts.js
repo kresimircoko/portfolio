@@ -187,7 +187,7 @@ $(function() {
 			}, 700);
 		}
 
-		if($('.work-section').offset().top - $(window).height()/1.2 + 350 < wScroll) {
+		if($('.work-section').offset().top - $(window).height()/1.2 + 250 < wScroll) {
 			setTimeout(function() {
 				$('#neobit-work').addClass('shown');
 			}, 1000);
