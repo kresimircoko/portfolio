@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="google-site-verification" content="T3HakZsmusFyVwocUiss-zBoZ49JDAr6g0zzsOf9CRs" />
 		<meta name="description"
 		content="Krešimir Čoko &#149; kresimircoko@gmail.com &#149; @kresimircoko &#149; Learn more about me &#149;">
 		<title>Krešimir Čoko | @kresimircoko | Front End Developer | Sibenik, Croatia</title>
