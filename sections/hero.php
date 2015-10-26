@@ -72,8 +72,9 @@
 			</nav>
 		</div>
 
-		<div class="half-section subsection">
+		<div class="half-section heading-subsection subsection">
 			<h1 class="site-heading">Krešimir Čoko</h1>
+			<h3 class="site-subheading">Front End Developer</h3>
 		</div>
 
 	</div>
