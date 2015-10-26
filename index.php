@@ -7,6 +7,7 @@
 		<meta name="description"
 		content="Krešimir Čoko &#149; kresimircoko@gmail.com &#149; @kresimircoko &#149; Learn more about me &#149;">
 		<title>Krešimir Čoko | @kresimircoko | Front End Developer | Sibenik, Croatia</title>
+		<link rel="alternate" href="http://kresimircoko.xyz" hreflang="en-hr" />
 		<link rel="icon" href="favicon.ico">
 		<link rel="stylesheet" href="css/style.css">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
