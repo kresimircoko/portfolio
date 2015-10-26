@@ -57,6 +57,7 @@
 		), url(../assets/img/kresimir-coko-sandra.png);
 	transition: 0.5s ease-in-out;
 	transform: translateX(-50px);
+	margin-bottom: 5px;
 
 	h2 {
 		color: $orange;
@@ -75,6 +76,7 @@
 			rgba($mediumGrey, 0.6)
 		), url(../assets/img/kresimir-coko-scsi.png);
 	transform: translateX(50px);
+	margin-bottom: 5px;
 
 	h2 {
 		color: $yellow;

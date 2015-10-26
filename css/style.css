@@ -1546,6 +1546,7 @@ hr {
   background-image: linear-gradient(rgba(102, 102, 102, 0.6), rgba(102, 102, 102, 0.6)), url(../assets/img/kresimir-coko-sandra.png);
   transition: 0.5s ease-in-out;
   transform: translateX(-50px);
+  margin-bottom: 5px;
 }
 
 #sandra-work h2 {
@@ -1561,6 +1562,7 @@ hr {
 #scsi-work {
   background-image: linear-gradient(rgba(102, 102, 102, 0.6), rgba(102, 102, 102, 0.6)), url(../assets/img/kresimir-coko-scsi.png);
   transform: translateX(50px);
+  margin-bottom: 5px;
 }
 
 #scsi-work h2 {
