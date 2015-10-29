@@ -20,7 +20,7 @@
 					<a href="http://www.algebra.hr/edukacija/programi-obrazovanja-za-kreativce/web-dizajner/">
 						web design course
 					</a>
-					at Algebra containing HTML, CSS, Wordpress Theme Developoment & SEO.
+					at Algebra containing HTML, CSS, Wordpress Theme Development & SEO.
 				</p>
 			</div>
 		</div>
