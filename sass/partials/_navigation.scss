@@ -12,8 +12,9 @@
 
 	a {
 		color: $clouds;
+		font-weight: 300;
 		font-size: 21px;
-		font-family: $Mont;
+		font-family: $Rale;
 
 		&:hover {
 			text-decoration: none;
@@ -27,7 +28,7 @@
 		&:after {
 			content: '';
 			display: block;
-			height: 3px;
+			height: 2px;
 			width: 0;
 			background: $clouds;
 			transition: width .5s ease, background-color .5s ease;

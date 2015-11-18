@@ -1,0 +1,74 @@
+.blog-section {
+}
+
+.post {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-image: linear-gradient(
+      rgba($darkGrey, 0.5),
+      rgba($darkGrey, 0.5)
+    ), url(../assets/img/kresimir-coko-post.jpg);
+  background-size: cover;
+  background-position: 40% 40%;
+  background-attachment: fixed;
+
+  .container {
+    padding: 0;
+  }
+}
+
+.post-content {
+  display: flex;
+  flex-direction: column;
+  padding: 80px 0;
+  margin: 0;
+  position: relative;
+
+  .post-title {
+    font-size: 3em;
+    color: $yellow;
+    text-align: left;
+    padding-bottom: 0;
+  }
+
+  .post-date {
+    font-family: $FS;
+    font-weight: 600;
+    font-size: 100%;
+    color: $whellow;
+    padding: 0 0.67em 0.67em;
+  }
+
+  .post-description {
+    color: $clouds;
+  }
+
+  i {
+    padding-left: 10px;
+    color: $yellow;
+    font-size: 120%;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 1024px) {
+  .post-content {
+    padding: 20px;
+    width: 100%;
+
+    h1 {
+      font-size: 36px;
+      text-align: center;
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .post-content {
+    width: 50%;
+  }
+}

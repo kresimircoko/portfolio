@@ -17,6 +17,7 @@
 
 			include 'sections/hero.php';
 			include 'sections/about.php';
+			include 'sections/blog.php';
 			include 'sections/achievements.php';
 			include 'sections/interests.php';
 			include 'sections/work.php';

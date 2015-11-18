@@ -51,6 +51,7 @@
 			<nav class="mobile-nav">
 				<ul class="mobile-menu">
 					<li><a href="#about">About me</a></li>
+					<li><a href="#blog">Blog</a></li>
 					<li><a href="#achievements">Achievements</a></li>
 					<li><a href="#interests">Interests</a></li>
 					<li><a href="#work">Work</a></li>
@@ -64,6 +65,7 @@
 			<nav class="main-nav">
 				<ul class="menu">
 					<li><a href="#about">About me</a></li>
+					<li><a href="#blog">Blog</a></li>
 					<li><a href="#achievements">Achievements</a></li>
 					<li><a href="#interests">Interests</a></li>
 					<li><a href="#work">Work</a></li>

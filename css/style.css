@@ -256,7 +256,7 @@ h2 {
   font-size: 24px;
 }
 
-p {
+p, span {
   font-size: 21px;
   color: #555;
   font-family: Raleway, sans-serif;
@@ -488,8 +488,9 @@ hr {
 
 .menu a {
   color: #ecf0f1;
+  font-weight: 300;
   font-size: 21px;
-  font-family: Montserrat, sans-serif;
+  font-family: Raleway, sans-serif;
 }
 
 .menu a:hover {
@@ -504,7 +505,7 @@ hr {
 .menu a:after {
   content: '';
   display: block;
-  height: 3px;
+  height: 2px;
   width: 0;
   background: #ecf0f1;
   transition: width 0.5s ease, background-color 0.5s ease;
@@ -931,6 +932,7 @@ hr {
 
 .site-subheading {
   font-family: Raleway, sans-serif;
+  font-weight: 300;
   text-align: right;
   padding: 0;
   color: #2ecc71;
@@ -1020,6 +1022,74 @@ hr {
     padding: 0px;
     text-align: center;
     position: initial;
+  }
+}
+
+.post {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-image: linear-gradient(rgba(51, 51, 51, 0.5), rgba(51, 51, 51, 0.5)), url(../assets/img/kresimir-coko-post.jpg);
+  background-size: cover;
+  background-position: 40% 40%;
+  background-attachment: fixed;
+}
+
+.post .container {
+  padding: 0;
+}
+
+.post-content {
+  display: flex;
+  flex-direction: column;
+  padding: 80px 0;
+  margin: 0;
+  position: relative;
+}
+
+.post-content .post-title {
+  font-size: 3em;
+  color: #F7CA18;
+  text-align: left;
+  padding-bottom: 0;
+}
+
+.post-content .post-date {
+  font-family: Fira Sans, sans-serif;
+  font-weight: 600;
+  font-size: 100%;
+  color: #FFEDA6;
+  padding: 0 0.67em 0.67em;
+}
+
+.post-content .post-description {
+  color: #ecf0f1;
+}
+
+.post-content i {
+  padding-left: 10px;
+  color: #F7CA18;
+  font-size: 120%;
+}
+
+.post-content:hover {
+  cursor: pointer;
+}
+
+@media screen and (min-width: 320px) and (max-width: 1024px) {
+  .post-content {
+    padding: 20px;
+    width: 100%;
+  }
+  .post-content h1 {
+    font-size: 36px;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .post-content {
+    width: 50%;
   }
 }
 
