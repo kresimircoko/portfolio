@@ -256,7 +256,7 @@ h2 {
   font-size: 24px;
 }
 
-p, span {
+p {
   font-size: 21px;
   color: #555;
   font-family: Raleway, sans-serif;
@@ -488,9 +488,9 @@ hr {
 
 .menu a {
   color: #ecf0f1;
-  font-weight: 300;
   font-size: 21px;
   font-family: Raleway, sans-serif;
+  font-weight: 300;
 }
 
 .menu a:hover {
@@ -505,7 +505,7 @@ hr {
 .menu a:after {
   content: '';
   display: block;
-  height: 2px;
+  height: 3px;
   width: 0;
   background: #ecf0f1;
   transition: width 0.5s ease, background-color 0.5s ease;
@@ -932,7 +932,6 @@ hr {
 
 .site-subheading {
   font-family: Raleway, sans-serif;
-  font-weight: 300;
   text-align: right;
   padding: 0;
   color: #2ecc71;
@@ -1025,6 +1024,44 @@ hr {
   }
 }
 
+.about-section {
+  background-color: white;
+}
+
+.about-section .half-section {
+  opacity: 0;
+  transform: translateY(20px);
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.about-section .half-section.shown {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 0.3s ease-in-out;
+}
+
+.profile-img {
+  width: 300px;
+  border-radius: 50%;
+  border: 8px solid #ecf0f1;
+}
+
+@media screen and (max-width: 768px) {
+  .profile-img {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .profile-img {
+    margin-bottom: 20px;
+  }
+}
+
 .post {
   width: 100%;
   display: flex;
@@ -1084,44 +1121,6 @@ hr {
   .post-content .post-title {
     font-size: 36px;
     text-align: center;
-  }
-}
-
-.about-section {
-  background-color: white;
-}
-
-.about-section .half-section {
-  opacity: 0;
-  transform: translateY(20px);
-  margin: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-
-.about-section .half-section.shown {
-  opacity: 1;
-  transform: translateY(0);
-  transition: all 0.3s ease-in-out;
-}
-
-.profile-img {
-  width: 300px;
-  border-radius: 50%;
-  border: 8px solid #ecf0f1;
-}
-
-@media screen and (max-width: 768px) {
-  .profile-img {
-    width: 70%;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .profile-img {
-    margin-bottom: 20px;
   }
 }
 
