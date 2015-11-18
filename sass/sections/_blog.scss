@@ -55,20 +55,14 @@
   }
 }
 
-@media screen and (min-width: 320px) and (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
   .post-content {
     padding: 20px;
     width: 100%;
 
-    h1 {
+    .post-title {
       font-size: 36px;
       text-align: center;
     }
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .post-content {
-    width: 50%;
   }
 }
