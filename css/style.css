@@ -337,7 +337,7 @@ ul li, ol li {
 }
 
 .main-section {
-  width: 100vw;
+  width: 100%;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
