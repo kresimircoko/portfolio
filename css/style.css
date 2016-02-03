@@ -1052,7 +1052,8 @@ hr {
 
 @media screen and (max-width: 768px) {
   .profile-img {
-    width: 70%;
+    width: 200px;
+    height: 200px;
   }
 }
 
