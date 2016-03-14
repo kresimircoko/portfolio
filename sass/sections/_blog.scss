@@ -5,17 +5,23 @@
   width: 100%;
   display: flex;
   justify-content: center;
-  background-image: linear-gradient(
-      rgba($darkGrey, 0.5),
-      rgba($darkGrey, 0.5)
-    ), url(../assets/img/kresimir-coko-post.jpg);
-  background-size: cover;
-  background-position: 40% 40%;
-  background-attachment: fixed;
 
   .container {
     padding: 0;
   }
+}
+
+/* Featured Post */
+.featured-post {
+  background-image:
+    linear-gradient(
+      rgba($darkGrey, 0.5),
+      rgba($darkGrey, 0.5)
+    ),
+    url(../assets/img/kresimir-coko-post-2.jpg);
+  background-size: cover;
+  background-position: 100% 100%;
+  background-attachment: fixed;
 }
 
 .post-content {
@@ -24,25 +30,6 @@
   padding: 80px 0;
   margin: 0;
   position: relative;
-
-  .post-title {
-    font-size: 3em;
-    color: $yellow;
-    text-align: left;
-    padding-bottom: 0;
-  }
-
-  .post-date {
-    font-family: $FS;
-    font-weight: 600;
-    font-size: 100%;
-    color: $whellow;
-    padding: 0 0.67em 0.67em;
-  }
-
-  .post-description {
-    color: $clouds;
-  }
 
   i {
     padding-left: 10px;
@@ -55,11 +42,94 @@
   }
 }
 
+.post-title {
+  font-size: 3em;
+  color: $yellow;
+  text-align: left;
+  padding-bottom: 0;
+}
+
+.post-date {
+  font-family: $FS;
+  font-weight: 600;
+  font-size: 100%;
+  color: $whellow;
+  padding: 0 0.67em 0.67em;
+}
+
+.post-description {
+  color: $clouds;
+}
+
+
+/* Old Post */
+.old-post-container {
+  background-image: url(../assets/img/pattern.png);
+  padding: 30px 0;
+}
+
+.old-post {
+  background-image:
+    linear-gradient(
+      rgba($darkGrey, 0.5clouds),
+      rgba($darkGrey, 0.5clouds)
+    ),url(../assets/img/kresimir-coko-post.jpg);
+    background-position: center center;
+    background-size: cover;
+
+  .post-content {
+    padding: 40px 20px;
+
+    i {
+      color: $clouds;
+      transition: .3s ease-in-out;
+    }
+
+    &:hover {
+      .post-title {
+        color: $emerald;
+        text-shadow: 1px 1px 2px black;
+        transition: .3s ease-in-out;
+      }
+
+      i {
+        color: $emerald;
+        text-shadow: 1px 1px 2px black;
+        transition: .3s ease-in-out;
+      }
+    }
+  }
+
+  .post-title {
+    text-align: center;
+    text-transform: none;
+    font-size: 2.4em;
+    padding: 0;
+    color: $clouds;
+    letter-spacing: -0.06em;
+    transition: .3s ease-in-out;
+  }
+
+  .post-date {
+    text-align: center;
+    padding: 5px;
+    color: $clouds;
+  }
+
+  .post-description {
+    padding: 0 20px;
+    font-size: 21px;
+    color: $clouds;
+    letter-spacing: -0.02em;
+  }
+}
 @media screen and (max-width: 1024px) {
   .post-content {
     padding: 20px;
     width: 100%;
+  }
 
+  .featured-post {
     .post-title {
       font-size: 36px;
       text-align: center;

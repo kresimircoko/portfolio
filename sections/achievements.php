@@ -2,9 +2,7 @@
 	<div class="container">
 
 		<div class="full-section">
-			<h1 class="section-heading">
-				Achievements
-			</h1>
+			<h1 class="section-heading">Achievements</h1>
 		</div>
 
 		<div id="algebra-achi" class="third-section subsection">

@@ -343,6 +343,13 @@ ul li, ol li {
   flex-wrap: wrap;
 }
 
+.mini-container {
+  width: 768px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .container {
   width: 1280px;
   display: flex;
@@ -382,15 +389,15 @@ ul li, ol li {
 }
 
 .half-section {
-  width: 49%;
+  width: 50%;
 }
 
 .third-section {
-  width: 32.5%;
+  width: 33%;
 }
 
 .quarter-section {
-  width: 24%;
+  width: 25%;
 }
 
 @media screen and (max-width: 1280px) {
@@ -508,7 +515,7 @@ hr {
   height: 3px;
   width: 0;
   background: #ecf0f1;
-  transition: width 0.5s ease, background-color 0.5s ease;
+  transition: width .5s ease, background-color .5s ease;
 }
 
 @media screen and (max-width: 1280px) {
@@ -957,7 +964,7 @@ hr {
 .shown {
   opacity: 1;
   transform: translateX(0);
-  transition: all 0.3s ease-in-out;
+  transition: all .3s ease-in-out;
 }
 
 @media screen and (max-width: 1280px) {
@@ -1067,14 +1074,18 @@ hr {
   width: 100%;
   display: flex;
   justify-content: center;
-  background-image: linear-gradient(rgba(51, 51, 51, 0.5), rgba(51, 51, 51, 0.5)), url(../assets/img/kresimir-coko-post.jpg);
-  background-size: cover;
-  background-position: 40% 40%;
-  background-attachment: fixed;
 }
 
 .post .container {
   padding: 0;
+}
+
+/* Featured Post */
+.featured-post {
+  background-image: linear-gradient(rgba(51, 51, 51, 0.5), rgba(51, 51, 51, 0.5)), url(../assets/img/kresimir-coko-post-2.jpg);
+  background-size: cover;
+  background-position: 100% 100%;
+  background-attachment: fixed;
 }
 
 .post-content {
@@ -1083,25 +1094,6 @@ hr {
   padding: 80px 0;
   margin: 0;
   position: relative;
-}
-
-.post-content .post-title {
-  font-size: 3em;
-  color: #F7CA18;
-  text-align: left;
-  padding-bottom: 0;
-}
-
-.post-content .post-date {
-  font-family: Fira Sans, sans-serif;
-  font-weight: 600;
-  font-size: 100%;
-  color: #FFEDA6;
-  padding: 0 0.67em 0.67em;
-}
-
-.post-content .post-description {
-  color: #ecf0f1;
 }
 
 .post-content i {
@@ -1114,12 +1106,87 @@ hr {
   cursor: pointer;
 }
 
+.post-title {
+  font-size: 3em;
+  color: #F7CA18;
+  text-align: left;
+  padding-bottom: 0;
+}
+
+.post-date {
+  font-family: Fira Sans, sans-serif;
+  font-weight: 600;
+  font-size: 100%;
+  color: #FFEDA6;
+  padding: 0 0.67em 0.67em;
+}
+
+.post-description {
+  color: #ecf0f1;
+}
+
+/* Old Post */
+.old-post-container {
+  background-image: url(../assets/img/pattern.png);
+  padding: 30px 0;
+}
+
+.old-post {
+  background-image: linear-gradient(rgba(51, 51, 51, 0.5), rgba(51, 51, 51, 0.5)), url(../assets/img/kresimir-coko-post.jpg);
+  background-position: center center;
+  background-size: cover;
+}
+
+.old-post .post-content {
+  padding: 40px 20px;
+}
+
+.old-post .post-content i {
+  color: #ecf0f1;
+  transition: .3s ease-in-out;
+}
+
+.old-post .post-content:hover .post-title {
+  color: #2ecc71;
+  text-shadow: 1px 1px 2px black;
+  transition: .3s ease-in-out;
+}
+
+.old-post .post-content:hover i {
+  color: #2ecc71;
+  text-shadow: 1px 1px 2px black;
+  transition: .3s ease-in-out;
+}
+
+.old-post .post-title {
+  text-align: center;
+  text-transform: none;
+  font-size: 2.4em;
+  padding: 0;
+  color: #ecf0f1;
+  letter-spacing: -0.06em;
+  transition: .3s ease-in-out;
+}
+
+.old-post .post-date {
+  text-align: center;
+  padding: 5px;
+  color: #ecf0f1;
+}
+
+.old-post .post-description {
+  padding: 0 20px;
+  font-size: 21px;
+  color: #ecf0f1;
+  letter-spacing: -0.02em;
+}
+
 @media screen and (max-width: 1024px) {
   .post-content {
     padding: 20px;
     width: 100%;
   }
-  .post-content .post-title {
+  .featured-post .post-title {
     font-size: 36px;
     text-align: center;
   }
