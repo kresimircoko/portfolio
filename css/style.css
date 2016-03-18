@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700|Fira+Sans:700|Raleway:400);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700|Fira+Sans:700|Raleway:300,400);
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
@@ -341,13 +341,6 @@ ul li, ol li {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-}
-
-.mini-container {
-  width: 768px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
 }
 
 .container {
@@ -917,10 +910,7 @@ hr {
 
 .hero-section .container {
   padding: 0;
-}
-
-.hero-section .subsection {
-  align-items: flex-end;
+  align-items: center;
 }
 
 #logo-span {
@@ -932,18 +922,9 @@ hr {
   display: none;
 }
 
-.heading-subsection.subsection {
+.heading-subsection {
   flex-direction: column;
-  justify-content: flex-end;
-}
-
-.site-subheading {
-  font-family: Raleway, sans-serif;
-  text-align: right;
-  padding: 0;
-  color: #2ecc71;
-  padding-bottom: 5px;
-  text-shadow: 1px 1px 3px #333;
+  justify-content: center;
 }
 
 .site-heading {
@@ -953,12 +934,20 @@ hr {
   line-height: 1.2;
   padding: 0;
   font-size: 120px;
-  text-align: right;
+  text-align: center;
   color: #AAA;
 }
 
 .site-heading.shown {
   color: #ecf0f1;
+}
+
+.site-subheading {
+  font-family: Raleway, sans-serif;
+  font-size: 24px;
+  padding: 0;
+  color: #2ecc71;
+  text-shadow: 1px 1px 3px #333;
 }
 
 .shown {
@@ -970,19 +959,6 @@ hr {
 @media screen and (max-width: 1280px) {
   .site-heading {
     font-size: 100px;
-  }
-}
-
-@media screen and (max-width: 1024px) {
-  .hero-section .half-section {
-    position: initial;
-  }
-  .heading-subsection.subsection {
-    padding: 0 40px;
-  }
-  .site-heading {
-    font-size: 80px;
-    position: initial;
   }
 }
 
@@ -1002,13 +978,12 @@ hr {
     margin: 0;
   }
   .site-heading {
-    font-size: 48px;
+    font-size: 64px;
   }
   .mobile-header {
     display: flex;
     align-items: center;
     flex-direction: column;
-    height: 60px;
   }
   .mobile-header .container {
     height: 60px;
@@ -1070,125 +1045,189 @@ hr {
   }
 }
 
-.post {
-  width: 100%;
-  display: flex;
-  justify-content: center;
+.blog-section {
+  align-items: stretch;
 }
 
-.post .container {
-  padding: 0;
+.blog-section .half-section, .blog-section .full-section {
+  margin: 0;
 }
 
 /* Featured Post */
 .featured-post {
-  background-image: linear-gradient(rgba(51, 51, 51, 0.5), rgba(51, 51, 51, 0.5)), url(../assets/img/kresimir-coko-post-2.jpg);
+  background-image: linear-gradient(rgba(51, 51, 51, 0.7), rgba(51, 51, 51, 0.7)), url(../assets/img/kresimir-coko-post-2.jpg);
   background-size: cover;
-  background-position: 100% 100%;
-  background-attachment: fixed;
-}
-
-.post-content {
-  display: flex;
+  width: 60%;
+  padding: 100px;
   flex-direction: column;
-  padding: 80px 0;
-  margin: 0;
-  position: relative;
-}
-
-.post-content i {
-  padding-left: 10px;
-  color: #F7CA18;
-  font-size: 120%;
-}
-
-.post-content:hover {
-  cursor: pointer;
-}
-
-.post-title {
-  font-size: 3em;
-  color: #F7CA18;
-  text-align: left;
-  padding-bottom: 0;
-}
-
-.post-date {
-  font-family: Fira Sans, sans-serif;
-  font-weight: 600;
-  font-size: 100%;
-  color: #FFEDA6;
-  padding: 0 0.67em 0.67em;
-}
-
-.post-description {
-  color: #ecf0f1;
 }
 
 /* Old Post */
-.old-post-container {
-  background-image: url(../assets/img/pattern.png);
-  padding: 30px 0;
+.old-post_section {
+  flex-direction: column;
+  align-items: stretch;
+  width: 40%;
 }
 
 .old-post {
-  background-image: linear-gradient(rgba(51, 51, 51, 0.5), rgba(51, 51, 51, 0.5)), url(../assets/img/kresimir-coko-post.jpg);
-  background-position: center center;
-  background-size: cover;
+  background-image: linear-gradient(rgba(51, 51, 51, 0.7), rgba(51, 51, 51, 0.7)), url(../assets/img/kresimir-coko-post.jpg);
+  flex-direction: column;
+  flex-grow: 1;
+  padding: 100px;
 }
 
-.old-post .post-content {
-  padding: 40px 20px;
+/* Post Date */
+.post-date, .old-post_date {
+  font-family: Montserrat, sans-serif;
+  font-size: 18px;
+  padding: 10px;
 }
 
-.old-post .post-content i {
-  color: #ecf0f1;
-  transition: .3s ease-in-out;
-}
-
-.old-post .post-content:hover .post-title {
-  color: #2ecc71;
-  text-shadow: 1px 1px 2px black;
-  transition: .3s ease-in-out;
-}
-
-.old-post .post-content:hover i {
-  color: #2ecc71;
-  text-shadow: 1px 1px 2px black;
-  transition: .3s ease-in-out;
-}
-
-.old-post .post-title {
+/* Post Title */
+.post-title, .old-post_title {
   text-align: center;
-  text-transform: none;
-  font-size: 2.4em;
-  padding: 0;
+}
+
+.post-title {
+  color: #1abc9c;
+  font-size: 52px;
+}
+
+.old-post_title {
+  color: #F7CA18;
+  font-size: 46px;
+}
+
+/* Post Description */
+.post-description {
+  width: 70%;
+  font-weight: 300;
+}
+
+.old-post_description {
+  font-size: 19px;
+  width: 90%;
+  font-weight: 300;
+}
+
+/* Blog CTA */
+.blog-cta {
+  background-color: #2ecc71;
+  padding: 20px 40px;
+  font-family: Montserrat, sans-serif;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 24px;
   color: #ecf0f1;
-  letter-spacing: -0.06em;
   transition: .3s ease-in-out;
 }
 
-.old-post .post-date {
-  text-align: center;
-  padding: 5px;
+.blog-cta:hover {
+  background-color: #1abc9c;
+  transition: .3s ease-in-out;
+}
+
+/* Color and Padding Resets*/
+.post-date, .post-description {
   color: #ecf0f1;
 }
 
-.old-post .post-description {
-  padding: 0 20px;
-  font-size: 21px;
+.old-post_date, .old-post_description {
   color: #ecf0f1;
-  letter-spacing: -0.02em;
+}
+
+.post-title, .post-description, .old-post_title, .old-post_description {
+  padding: 0 !important;
+}
+
+@media screen and (max-width: 1280px) {
+  .post-title {
+    font-size: 42px;
+    text-align: left;
+  }
+  .old-post_title {
+    font-size: 36px;
+  }
+  .featured-post {
+    padding: 38px;
+  }
+  .post-description {
+    width: 90%;
+  }
+  .old-post {
+    padding: 20px;
+  }
+  .blog-cta {
+    font-size: 21px;
+    padding: 15px 30px;
+  }
 }
 
 @media screen and (max-width: 1024px) {
-  .post-content {
-    padding: 20px;
+  .featured-post, .old-post_section {
     width: 100%;
   }
-  .featured-post .post-title {
-    font-size: 36px;
+  .post-title {
     text-align: center;
+  }
+  .post-description {
+    width: 80%;
+    font-size: 21px;
+  }
+  .old-post_description {
+    width: 80%;
+  }
+  .post-date, .old-post_date {
+    font-size: 16px;
+  }
+  .blog-cta {
+    padding: 20px 40px;
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .post-title {
+    font-size: 36px;
+  }
+  .post-description {
+    font-size: 19px;
+    font-weight: 300;
+  }
+  .old-post_title {
+    font-size: 32px;
+  }
+  .old-post_date {
+    font-size: 14px;
+  }
+  .old-post_description {
+    font-size: 17px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .post-title {
+    font-size: 28px;
+    text-align: left;
+  }
+  .post-description {
+    width: 100%;
+  }
+  .featured-post {
+    padding: 30px;
+  }
+  .old-post {
+    padding: 30px;
+  }
+  .old-post_title {
+    font-size: 24px;
+  }
+  .old-post_description {
+    width: 100%;
+  }
+  .blog-cta {
+    font-size: 21px;
+    padding: 20px 0;
   }
 }
 
@@ -1370,277 +1409,10 @@ hr {
     margin-bottom: 20px;
     width: 90%;
     padding: 0 10px;
-    box-shadow: 0px 0px 1px 1px #cfd9db;
+    box-shadow: 0 1px 2px rgba(51, 51, 51, 0.1);
   }
   .fa.achi-icon {
     padding-top: 30px;
-  }
-}
-
-.interests-section .full-container {
-  position: relative;
-}
-
-.interests-section .container {
-  padding-bottom: 0px;
-}
-
-.interests-section .subsection {
-  margin: 0;
-  display: flex;
-  justify-content: center;
-  background-image: url(../assets/img/kresimir-coko-interests.png);
-}
-
-.interests-section .subsection:after {
-  position: absolute;
-  font-family: FontAwesome;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 1;
-  font-size: 120px;
-  transition: .3s ease-in-out;
-}
-
-.interests-section .subsection p {
-  padding: 0;
-  color: #333;
-}
-
-.interests-section .subsection .half-section {
-  z-index: 2;
-}
-
-.interests-section .half-section {
-  width: 50%;
-}
-
-.interests-section .subsection-heading {
-  text-align: center;
-  padding: 50px 0;
-  color: #ecf0f1;
-  text-shadow: 1px 1px 3px #333;
-}
-
-#html-section {
-  background-color: #F9690E;
-  text-align: right;
-  position: relative;
-  transition: .3s ease-in-out;
-  transform: translateX(-100px);
-  opacity: 0;
-}
-
-#html-section.shown {
-  opacity: 1;
-  transform: translate(0);
-}
-
-#html-section:hover {
-  background-color: rgba(249, 105, 14, 0.7);
-  transition: .3s ease-in-out;
-}
-
-#html-section:hover:after {
-  color: #fa8236;
-}
-
-#html-section:after {
-  content: "\f13b";
-  color: #fa8840;
-}
-
-#css-section {
-  background-color: #3498db;
-  position: relative;
-  transition: .3s ease-in-out;
-  transform: translateX(100px);
-  opacity: 0;
-}
-
-#css-section.shown {
-  opacity: 1;
-  transform: translate(0);
-}
-
-#css-section:hover {
-  background-color: rgba(52, 152, 219, 0.7);
-  transition: .3s ease-in-out;
-}
-
-#css-section:hover:after {
-  color: #57aae1;
-}
-
-#css-section:after {
-  content: "\f13c";
-  color: #75b9e7;
-}
-
-#js-section {
-  background-color: #F7CA18;
-  text-align: right;
-  position: relative;
-  transition: .3s ease-in-out;
-  transform: translateX(-100px);
-  opacity: 0;
-}
-
-#js-section.shown {
-  opacity: 1;
-  transform: translate(0);
-}
-
-#js-section:hover {
-  background-color: rgba(247, 202, 24, 0.7);
-  transition: .3s ease-in-out;
-}
-
-#js-section:hover:after {
-  color: #F7CA18;
-}
-
-#js-section:after {
-  content: "\f1cc";
-  color: #fadb62;
-}
-
-#wp-section {
-  background-color: #ecf0f1;
-  position: relative;
-  transition: .3s ease-in-out;
-  transform: translateX(100px);
-  opacity: 0;
-}
-
-#wp-section.shown {
-  opacity: 1;
-  transform: translate(0);
-}
-
-#wp-section:hover {
-  background-color: rgba(170, 170, 170, 0.7);
-  transition: .3s ease-in-out;
-}
-
-#wp-section:hover:after {
-  color: rgba(236, 240, 241, 0.5);
-}
-
-#wp-section:after {
-  content: "\f19a";
-  color: white;
-}
-
-#speaking-section {
-  background-color: #9b59b6;
-  text-align: right;
-  position: relative;
-  transition: .3s ease-in-out;
-  transform: translateX(-100px);
-  opacity: 0;
-}
-
-#speaking-section.shown {
-  opacity: 1;
-  transform: translate(0);
-}
-
-#speaking-section:hover {
-  background-color: rgba(155, 89, 182, 0.7);
-  transition: .3s ease-in-out;
-}
-
-#speaking-section:hover:after {
-  color: rgba(155, 89, 182, 0.5);
-}
-
-#speaking-section:after {
-  content: "\f130";
-  color: #b07cc6;
-}
-
-#gaming-section {
-  background-color: #666;
-  position: relative;
-  transition: .3s ease-in-out;
-  transform: translateX(-100px);
-  opacity: 0;
-}
-
-#gaming-section.shown {
-  opacity: 1;
-  transform: translate(0);
-}
-
-#gaming-section:hover {
-  background-color: rgba(102, 102, 102, 0.7);
-  transition: .3s ease-in-out;
-}
-
-#gaming-section:hover:after {
-  color: rgba(102, 102, 102, 0.5);
-}
-
-#gaming-section:after {
-  content: "\f1b6";
-  color: gray;
-}
-
-#floating-subsection {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-image: none;
-  background-color: #ecf0f1;
-  box-shadow: 0 0 12px #666;
-  position: absolute;
-  z-index: 2;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-#floating-subsection h1 {
-  background-image: url(../assets/img/kresimir-coko-interests.png);
-  background-color: rgba(46, 204, 113, 0.5);
-  font-size: 42px;
-  padding: 20px;
-  margin: 20px;
-  border: 6px solid #333;
-  transition: .3s ease-in-out;
-}
-
-@media screen and (max-width: 1280px) {
-  .interests-section .subsection .third-section {
-    width: 50%;
-  }
-  #floating-subsection {
-    width: 240px;
-    height: 240px;
-  }
-}
-
-@media screen and (max-width: 1024px) {
-  #html-section, #css-section, #js-section, #wp-section {
-    transform: translateY(50px);
-  }
-  #floating-subsection {
-    width: 180px;
-    height: 180px;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .interests-section .half-section {
-    width: 100%;
-  }
-  .interests-section .subsection .third-section {
-    width: 80%;
-  }
-  #floating-subsection {
-    display: none;
   }
 }
 

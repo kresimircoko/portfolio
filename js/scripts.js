@@ -4,7 +4,6 @@ $(function() {
 		mobileNav();
 		burger();
 		smoothScroll(600);
-		interestsBGStuff();
 	});
 
 	$(window).scroll(function() {
@@ -12,9 +11,6 @@ $(function() {
 
 		startAchievementsHeading();
 		startAchievements();
-
-		startInterestsHeading();
-		startInterests();
 
 		startWorkHeading();
 		startWork();
@@ -73,7 +69,7 @@ $(function() {
 		}
 	}
 
-	// Achivements Heading Animation
+	// Achievements Heading Animation
 	function startAchievementsHeading() {
 		var wScroll = $(window).scrollTop();
 
@@ -84,7 +80,7 @@ $(function() {
 		}
 	}
 
-	// Achivements Section Animations
+	// Achievements Section Animations
 	function startAchievements() {
 		var wScroll = $(window).scrollTop();
 
@@ -106,58 +102,6 @@ $(function() {
 				$('.interests-section .section-heading').addClass('shown');
 			}, 300);
 		}
-	}
-
-	// Interests Section Animations
-	function startInterests() {
-		var wScroll = $(window).scrollTop();
-
-		if($('.interests-section').offset().top - $(window).height()/1.2 + 50 < wScroll) {
-			setTimeout(function() {
-				$('#html-section').addClass('shown');
-			}, 300);
-		}
-
-		if($('.interests-section').offset().top - $(window).height()/1.2 + 50 < wScroll) {
-			setTimeout(function() {
-				$('#css-section').addClass('shown');
-			}, 400);
-		}
-
-		if($('.interests-section').offset().top - $(window).height()/1.2 + 100 < wScroll) {
-			setTimeout(function() {
-				$('#js-section').addClass('shown');
-			}, 300);
-		}
-
-		if($('.interests-section').offset().top - $(window).height()/1.2 + 100 < wScroll) {
-			setTimeout(function() {
-				$('#wp-section').addClass('shown');
-			}, 400);
-		}
-
-		if($('.interests-section').offset().top - $(window).height()/1.2 + 150 < wScroll) {
-			setTimeout(function() {
-				$('#speaking-section').addClass('shown');
-			}, 300);
-		}
-
-		if($('.interests-section').offset().top - $(window).height()/1.2 + 150 < wScroll) {
-			setTimeout(function() {
-				$('#gaming-section').addClass('shown');
-			}, 400);
-		}
-	}
-
-
-	// Interests BG Changes on hover
-	function interestsBGStuff() {
-		$('.interests-section .subsection').hover(function(){
-			$('#floating-subsection h1').css('background-color', $(this).data('color'));
-		}, function() {
-			// off > revert the color
-			$('#floating-subsection h1').css('background-color', $('#floating-subsection h1').data('orig-color'));
-		});
 	}
 
 	// Work Heading Animation
