@@ -1,68 +1,213 @@
 .blog-section {
+  align-items: stretch;
+
+  .half-section, .full-section {
+    margin: 0;
+  }
 }
 
-.post {
-  width: 100%;
-  display: flex;
-  justify-content: center;
+/* Featured Post */
+
+.featured-post {
   background-image: linear-gradient(
-      rgba($darkGrey, 0.5),
-      rgba($darkGrey, 0.5)
-    ), url(../assets/img/kresimir-coko-post.jpg);
+    rgba(51, 51, 51, 0.7),
+    rgba(51, 51, 51, 0.7)
+  ), url(../assets/img/kresimir-coko-post-2.jpg);
   background-size: cover;
-  background-position: 40% 40%;
-  background-attachment: fixed;
+  width: 60%;
+  padding: 100px;
+  flex-direction: column;
+}
 
-  .container {
-    padding: 0;
+/* Old Post */
+
+.old-post_section {
+  flex-direction: column;
+  align-items: stretch;
+  width: 40%;
+}
+
+.old-post {
+  background-image: linear-gradient(
+    rgba(51, 51, 51, 0.7),
+    rgba(51, 51, 51, 0.7)
+  ), url(../assets/img/kresimir-coko-post.jpg);
+  flex-direction: column;
+  flex-grow: 1;
+  padding: 100px;
+}
+
+/* Post Date */
+.post-date, .old-post_date {
+  font-family: $Mont;
+  font-size: 18px;
+  padding: 10px;
+}
+
+/* Post Title */
+.post-title, .old-post_title {
+  text-align: center;
+}
+
+.post-title {
+  color: $turquoise;
+  font-size: 52px;
+}
+
+.old-post_title {
+  color: $yellow;
+  font-size: 46px;
+}
+
+/* Post Description */
+.post-description {
+  width: 70%;
+  font-weight: 300;
+}
+
+.old-post_description {
+  font-size: 19px;
+  width: 90%;
+  font-weight: 300;
+}
+
+/* Blog CTA */
+.blog-cta {
+  background-color: $emerald;
+  padding: 20px 40px;
+  font-family: $Mont;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 24px;
+  color: $clouds;
+  transition: .3s ease-in-out;
+
+  &:hover {
+    background-color: $turquoise;
+    transition: .3s ease-in-out;
   }
 }
 
-.post-content {
-  display: flex;
-  flex-direction: column;
-  padding: 80px 0;
-  margin: 0;
-  position: relative;
+/* Color and Padding Resets*/
+.post-date, .post-description {
+  color: $clouds;
+}
 
-  .post-title {
-    font-size: 3em;
-    color: $yellow;
+.old-post_date, .old-post_description {
+  color: $clouds;
+}
+
+.post-title, .post-description, .old-post_title, .old-post_description {
+  padding: 0 !important;
+}
+
+@media screen and (max-width: 1280px) {
+	.post-title {
+    font-size: 42px;
     text-align: left;
-    padding-bottom: 0;
+	}
+
+  .old-post_title {
+    font-size: 36px;
   }
 
-  .post-date {
-    font-family: $FS;
-    font-weight: 600;
-    font-size: 100%;
-    color: $whellow;
-    padding: 0 0.67em 0.67em;
+  .featured-post {
+    padding: 38px;
   }
 
   .post-description {
-    color: $clouds;
+    width: 90%;
   }
 
-  i {
-    padding-left: 10px;
-    color: $yellow;
-    font-size: 120%;
+  .old-post {
+    padding: 20px;
   }
 
-  &:hover {
-    cursor: pointer;
+  .blog-cta {
+    font-size: 21px;
+    padding: 15px 30px;
   }
 }
 
 @media screen and (max-width: 1024px) {
-  .post-content {
-    padding: 20px;
-    width: 100%;
+	.featured-post, .old-post_section {
+		width: 100%;
+	}
 
-    .post-title {
-      font-size: 36px;
-      text-align: center;
-    }
+  .post-title {
+    text-align: center;
+  }
+
+  .post-description {
+    width: 80%;
+    font-size: 21px;
+  }
+
+  .old-post_description {
+    width: 80%;
+  }
+
+  .post-date, .old-post_date {
+    font-size: 16px;
+  }
+
+  .blog-cta {
+    padding: 20px 40px;
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .post-title {
+    font-size: 36px;
+  }
+
+  .post-description {
+    font-size: 19px;
+    font-weight: 300;
+  }
+
+  .old-post_title {
+    font-size: 32px;
+  }
+
+  .old-post_date {
+    font-size: 14px;
+  }
+
+  .old-post_description {
+    font-size: 17px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .post-title {
+    font-size: 28px;
+    text-align: left;
+  }
+
+  .post-description {
+    width: 100%;
+  }
+
+  .featured-post {
+    padding: 30px;
+  }
+
+  .old-post {
+    padding: 30px;
+  }
+
+  .old-post_title {
+    font-size: 24px;
+  }
+
+  .old-post_description {
+    width: 100%;
+  }
+
+  .blog-cta {
+    font-size: 21px;
+    padding: 20px 0;
   }
 }
