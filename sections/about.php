@@ -13,12 +13,8 @@
 
 		<div class="half-section subsection">
 			<p>
-				Student at Polytechnic of Sibenik where I am one of the people in charge of improving the student community by developing and redesigning websites.
-			</p>
-			<p>
-				Hard working when it comes to the things I love, which include mainly front end development and gaming. Love to learn new things and share the knowledge to everyone around me.
-			</p>
-			<p>
+				Student at Polytechnic of Sibenik where I am one of the people in charge of improving the student community by developing and redesigning websites.<br><br>
+				Hard working when it comes to the things I love, which include mainly front end development and gaming. Love to learn new things and share the knowledge to everyone around me.<br><br>
 				Proficient at front end development. Expert at drinking coffee.
 			</p>
 		</div>

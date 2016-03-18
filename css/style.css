@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700|Fira+Sans:700|Raleway:300,400);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:700|Fira+Sans:700|Raleway:300|Bree+Serif&subset=latin,latin-ext);
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
@@ -925,17 +925,19 @@ hr {
 .heading-subsection {
   flex-direction: column;
   justify-content: center;
+  margin-bottom: 0;
 }
 
 .site-heading {
   font-family: Fira Sans, sans-serif;
+  text-transform: none;
+  font-weight: 300;
+  line-height: 1;
   opacity: 0;
   transform: translateX(50px);
-  line-height: 1.2;
   padding: 0;
-  font-size: 120px;
+  font-size: 64px;
   text-align: center;
-  color: #AAA;
 }
 
 .site-heading.shown {
@@ -943,17 +945,43 @@ hr {
 }
 
 .site-subheading {
-  font-family: Raleway, sans-serif;
-  font-size: 24px;
+  font-family: Bree Serif, serif;
+  font-weight: 400;
+  line-height: 1;
+  font-size: 26px;
   padding: 0;
   color: #2ecc71;
-  text-shadow: 1px 1px 3px #333;
+  text-shadow: 0 1px 1px #124f2c;
 }
 
 .shown {
   opacity: 1;
   transform: translateX(0);
   transition: all .3s ease-in-out;
+}
+
+.hero-cta_section {
+  flex-direction: column;
+}
+
+.hero-cta_addon {
+  color: #ecf0f1;
+  font-family: Raleway, sans-serif;
+  font-weight: 300;
+  font-size: 21px;
+  padding-bottom: 5px;
+}
+
+.hero-cta {
+  color: white;
+  background-color: #2ecc71;
+  padding: 15px 60px;
+  font-family: Montserrat, sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  text-transform: uppercase;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(51, 51, 51, 0.1);
 }
 
 @media screen and (max-width: 1280px) {
@@ -964,7 +992,7 @@ hr {
 
 @media screen and (max-width: 768px) {
   .hero-section {
-    height: 80vh;
+    height: 100vh;
   }
   .nav-subsection.subsection {
     display: none;
@@ -978,7 +1006,19 @@ hr {
     margin: 0;
   }
   .site-heading {
-    font-size: 64px;
+    font-size: 46px;
+  }
+  .site-subheading {
+    font-size: 21px;
+  }
+  .hero-cta_section {
+    margin: 0;
+  }
+  .hero-cta_addon {
+    font-size: 18px;
+  }
+  .hero-cta {
+    font-size: 21px;
   }
   .mobile-header {
     display: flex;
@@ -1003,6 +1043,12 @@ hr {
     padding: 0px;
     text-align: center;
     position: initial;
+  }
+}
+
+@media screen and (max-width: 359px) {
+  .hero-cta {
+    font-size: 18px;
   }
 }
 
@@ -1578,9 +1624,9 @@ hr {
 
 .contact-icons-subsection a {
   padding: 0 10px;
-  font-size: 18px;
+  font-size: 21px;
   color: #ecf0f1;
-  font-family: Montserrat, sans-serif;
+  font-family: Raleway, sans-serif;
   transform: translateX(-100px);
   transition: .3s ease-in-out;
   opacity: 0;
@@ -1593,7 +1639,7 @@ hr {
 
 .contact-icons-subsection i {
   font-size: 24px;
-  text-shadow: 1px 1px 1px #124f2c;
+  color: #333;
 }
 
 .fa-twitter {
@@ -1650,6 +1696,6 @@ hr {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-size: 12px;
+    font-size: 14px;
   }
 }

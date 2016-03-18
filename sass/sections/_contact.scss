@@ -25,9 +25,9 @@
 
 	a {
 		padding: 0 10px;
-		font-size: 18px;
+		font-size: 21px;
 		color: $clouds;
-		font-family: $Mont;
+		font-family: $Rale;
 		transform: translateX(-100px);
 		transition: .3s ease-in-out;
 		opacity: 0;
@@ -40,7 +40,7 @@
 
 	i {
 		font-size: 24px;
-		text-shadow: 1px 1px 1px darken($emerald, 30%);
+		color: $darkGrey;
 	}
 }
 
@@ -118,7 +118,7 @@
 			flex-direction: column;
 			align-items: center;
 			justify-content: center;
-			font-size: 12px;
+			font-size: 14px;
 		}
 	}
 }

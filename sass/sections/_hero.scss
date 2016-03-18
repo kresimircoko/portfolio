@@ -25,17 +25,19 @@
 .heading-subsection {
 	flex-direction: column;
 	justify-content: center;
+	margin-bottom: 0;
 }
 
 .site-heading {
 	font-family: $FS;
+	text-transform: none;
+	font-weight: 300;
+	line-height: 1;
 	opacity: 0;
 	transform: translateX(50px);
-	line-height: 1.2;
 	padding: 0;
-	font-size: 120px;
+	font-size: 64px;
 	text-align: center;
-	color: $grey;
 
 	&.shown {
 		color: $clouds;
@@ -43,17 +45,43 @@
 }
 
 .site-subheading {
-	font-family: $Rale;
-	font-size: 24px;
+	font-family: $Bree;
+	font-weight: 400;
+	line-height: 1;
+	font-size: 26px;
 	padding: 0;
 	color: $emerald;
-	text-shadow: 1px 1px 3px $darkGrey;
+	text-shadow: 0 1px 1px darken($emerald, 30%);
 }
 
 .shown {
 	opacity: 1;
 	transform: translateX(0);
 	transition: all .3s ease-in-out;
+}
+
+.hero-cta_section {
+	flex-direction: column;
+}
+
+.hero-cta_addon {
+	color: $clouds;
+	font-family: $Rale;
+	font-weight: 300;
+	font-size: 21px;
+	padding-bottom: 5px;
+}
+
+.hero-cta {
+	color: white;
+	background-color: $emerald;
+	padding: 15px 60px;
+	font-family: $Mont;
+	font-weight: 700;
+	font-size: 24px;
+	text-transform: uppercase;
+	text-align: center;
+	box-shadow: 0 2px 4px rgba($darkGrey, 0.1);
 }
 
 
@@ -65,7 +93,7 @@
 
 @media screen and (max-width: 768px) {
 	.hero-section {
-		height: 80vh;
+		height: 100vh;
 	}
 
 	.nav-subsection.subsection {
@@ -82,7 +110,23 @@
 	}
 
 	.site-heading {
-		font-size: 64px;
+		font-size: 46px;
+	}
+
+	.site-subheading {
+		font-size: 21px;
+	}
+
+	.hero-cta_section {
+		margin: 0;
+	}
+
+	.hero-cta_addon {
+		font-size: 18px;
+	}
+
+	.hero-cta {
+		font-size: 21px;
 	}
 
 	.mobile-header {
@@ -111,5 +155,11 @@
 		padding: 0px;
 		text-align: center;
 		position: initial;
+	}
+}
+
+@media screen and (max-width: 359px) {
+	.hero-cta {
+		font-size: 18px;
 	}
 }
