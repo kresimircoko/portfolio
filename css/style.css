@@ -508,7 +508,7 @@ hr {
   height: 3px;
   width: 0;
   background: #ecf0f1;
-  transition: width 0.5s ease, background-color 0.5s ease;
+  transition: width .5s ease, background-color .5s ease;
 }
 
 @media screen and (max-width: 1280px) {
@@ -957,7 +957,7 @@ hr {
 .shown {
   opacity: 1;
   transform: translateX(0);
-  transition: all 0.3s ease-in-out;
+  transition: all .3s ease-in-out;
 }
 
 @media screen and (max-width: 1280px) {
