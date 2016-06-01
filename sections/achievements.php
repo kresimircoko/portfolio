@@ -6,7 +6,6 @@
 		</div>
 
 		<div id="algebra-achi" class="third-section subsection">
-			<div class="achi-number"><h2>1</h2></div>
 
 			<div class="achi-content">
 				<i class="fa fa-certificate achi-icon"></i>
@@ -24,7 +23,6 @@
 		</div>
 
 		<div id="division-achi" class="third-section subsection">
-			<div class="achi-number"><h2>2</h2></div>
 
 			<div class="achi-content">
 				<i class="fa fa-code achi-icon"></i>
@@ -38,7 +36,6 @@
 		</div>
 
 		<div id="paper-achi" class="third-section subsection">
-			<div class="achi-number"><h2>3</h2></div>
 
 			<div class="achi-content">
 				<i class="fa fa-file-text-o achi-icon"></i>

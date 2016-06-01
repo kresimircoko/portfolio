@@ -7,18 +7,6 @@
 		align-items: center;
 		justify-content: center;
 		margin: 0;
-
-		&:hover {
-			.achi-number {
-				background-color: lighten(#BCBCBC, 14%);
-				transition: .3s ease-in-out;
-
-				h2 {
-					color: darken(#BCBCBC, 20%);
-					transition: all 0.3s ease-in-out;
-				}
-			}
-		}
 	}
 }
 
@@ -64,18 +52,20 @@
 
 .fa.achi-icon {
 	font-size: 92px;
-	padding: 60px 0 15px;
+	padding: 10px 0;
 }
 
 .achi-title {
-	font-size: 26px;
+	font-size: 32px;
+	text-align: center;
 	font-family: $Mont;
 	text-transform: uppercase;
 	padding: 20px 0 0 0;
 }
 
 
-.achi-text {
+p.achi-text {
+	font-size: 24px;
 	a {
 		color: $turquoise;
 		font-weight: 500;

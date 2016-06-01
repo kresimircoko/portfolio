@@ -41,6 +41,7 @@
 }
 
 .currently-working-on {
+	display: none;
 	background-image:
 		linear-gradient(
 			rgba($darkGrey, 0.5),
@@ -142,6 +143,9 @@
 			font-size: 28px;
 			padding: 20px 0;
 		}
+	}
+	.currently-working-on {
+		display: flex;
 	}
 }
 
