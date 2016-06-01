@@ -1,5 +1,10 @@
 <section id="blog" class="blog-section main-section">
 
+  <span class="soontm-post">
+    <i class="fa fa-pencil"></i>
+    Coming Soon<sup>tm</sup> : <br>
+    My experiences attending the Shift Conference</span>
+
   <a href="https://medium.com/@kresimircoko/the-good-the-bad-and-the-ugly-of-developing-the-official-college-website-as-a-student-ea341378482d#.2eg8ws1q7" target="_blank" class="featured-post half-section subsection">
     <h1 class="post-title">Developing a college website as a student</h1>
     <span class="post-date">18/03/2016</span>

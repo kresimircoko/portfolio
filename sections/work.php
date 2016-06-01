@@ -7,6 +7,11 @@
 			</h1>
 		</div>
 
+		<div class="currently-working-on">
+			<span>Currently working on an</span>
+			<span>Apartment Renting App</span>
+		</div>
+
 		<a href="http://apartmanisandra.com" target="_blank">
 			<div id="sandra-work" class="full-section subsection">
 				<div class="half-section">

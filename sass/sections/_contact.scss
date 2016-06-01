@@ -28,14 +28,6 @@
 		font-size: 21px;
 		color: $clouds;
 		font-family: $Rale;
-		transform: translateX(-100px);
-		transition: .3s ease-in-out;
-		opacity: 0;
-
-		&.shown {
-			opacity: 1;
-			transform: translateX(0);
-		}
 	}
 
 	i {
@@ -65,13 +57,13 @@
 
 		.section-heading {
 			font-size: 42px;
-			padding: 60px 0;
+			padding: 45px 0 30px 0;
 		}
 	}
 
 	.contact-icons-subsection {
 		a {
-			font-size: 16px;
+			font-size: 21px;
 		}
 	}
 }
@@ -107,18 +99,31 @@
 
 @media screen and (max-width: 400px) {
 	.contact-section {
+		padding: 20px 0;
+
 		.section-heading {
-			font-size: 24px;
+			font-size: 28px;
+			padding: 20px;
 		}
 	}
 
 	.contact-icons-subsection {
+		display: flex;
+		flex-direction: column;
+
 		a {
 			display: flex;
-			flex-direction: column;
 			align-items: center;
 			justify-content: center;
-			font-size: 14px;
+			font-size: 21px;
+
+			i {
+				padding-right: 10px;
+			}
+
+			&:nth-child(2) {
+				padding: 10px 0;
+			}
 		}
 	}
 }

@@ -6,22 +6,13 @@
 	}
 
 	.subsection {
-		opacity: 0;
-		transition: all 0.5s ease-in-out;
 		background-position: 50% 0%;
 		margin: 0;
 		display: flex;
 		justify-content: center;
 		padding: 80px 0;
 
-		&.shown {
-			opacity: 1;
-			transform: translate(0);
-			transition: all 0.5s ease-in-out
-		}
-
 		.half-section {
-			transition: all 0.5s ease-in-out;
 
 			h2 {
 				text-align: center;
@@ -49,24 +40,49 @@
 	}
 }
 
+.currently-working-on {
+	background-image:
+		linear-gradient(
+			rgba($darkGrey, 0.5),
+			rgba($darkGrey, 0.5)
+		),
+		url(../assets/img/kresimir-coko-react.png);
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	width: 100%;
+  box-shadow:
+    0 1px 2px rgba($darkGrey, 0.3),
+    0 -1px 2px rgba($darkGrey, 0.3);
+	padding: 20px;
+	flex-direction: column;
+	justify-content: center;
+	background-color: $darkGrey;
+	margin-bottom: 10px;
+
+	span {
+		text-align: center;
+		display: block;
+	  font-size: 24px;
+	  color: $clouds;
+	  font-family: $FS;
+
+		&:last-child {
+			padding-top: 10px;
+			color: $whellow;
+		}
+	}
+}
 
 #sandra-work {
 	background-image: linear-gradient(
 			rgba($mediumGrey, 0.6),
 			rgba($mediumGrey, 0.6)
 		), url(../assets/img/kresimir-coko-sandra.png);
-	transition: 0.5s ease-in-out;
-	transform: translateX(-50px);
 	margin-bottom: 5px;
 
 	h2 {
 		color: $orange;
-	}
-
-	&.shown {
-		opacity: 1;
-		transform: translateX(0);
-		transition: all 0.5s ease-in-out
 	}
 }
 
@@ -75,17 +91,10 @@
 			rgba($mediumGrey, 0.6),
 			rgba($mediumGrey, 0.6)
 		), url(../assets/img/kresimir-coko-scsi.png);
-	transform: translateX(50px);
 	margin-bottom: 5px;
 
 	h2 {
 		color: $yellow;
-	}
-
-	&.shown {
-		opacity: 1;
-		transform: translateY(0);
-		transition: all 0.5s ease-in-out
 	}
 }
 
@@ -94,24 +103,13 @@
 			rgba($mediumGrey, 0.6),
 			rgba($mediumGrey, 0.6)
 		), url(../assets/img/kresimir-coko-neobit.png);
-	transform: translateX(-50px);
 
 	h2 {
 		color: $emerald;
 	}
-
-	&.shown {
-		opacity: 1;
-		transform: translateY(0);
-		transition: all 0.5s ease-in-out
-	}
 }
 
 @media screen and (max-width: 1024px) {
-	#sandra-work, #scsi-work, #neobit-work {
-		transform: translateY(50px);
-	}
-
 	.work-section {
 		.subsection:hover {
 			background-position: 50% 0;
@@ -127,13 +125,22 @@
 	.work-section {
 
 		.container {
-			justify-content: center;
-			padding-bottom: 0;
+			padding-bottom: 10px;
+
+			a {
+				width: 90%;
+			}
 		}
 
 		.subsection {
 			width: 100%;
-			padding: 60px 0;
+			padding: 30px 0;
+			margin: 0;
+		}
+
+		.subsection-heading {
+			font-size: 28px;
+			padding: 20px 0;
 		}
 	}
 }
@@ -149,8 +156,11 @@
 @media screen and (max-width: 480px) {
 	.work-section {
 
-		.half-section {
-			width: 90%;
+		.container {
+			a {
+				width: 100%;
+			}
+
 		}
 	}
 }
